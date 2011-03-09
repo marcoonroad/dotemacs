@@ -1,3 +1,4 @@
 vendor/anything    = [git]git://repo.or.cz/anything-config.git
 vendor/coffee-mode = [git]git://github.com/defunkt/coffee-mode.git
+vendor/jade-mode   = [git]git://github.com/brianc/jade-mode.git
  
