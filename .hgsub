@@ -5,4 +5,5 @@ vendor/js2-mode      = [svn]http://js2-mode.googlecode.com/svn/trunk/
 vendor/markdown-mode = [git]git://jblevins.org/git/markdown-mode.git
 vendor/Pymacs        = [git]git://github.com/pinard/Pymacs.git
 vendor/tumble        = [git]git://github.com/febuiles/tumble.git
+vendor/twmode        = [git]git://github.com/hayamiz/twittering-mode.git
 
