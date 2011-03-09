@@ -14,7 +14,6 @@
 (load "sorella/coffee")
 (load "sorella/html")
 (load "sorella/js2")
-(load "sorella/python")
 (load "sorella/twittering")
 (load "sorella/yasnippet")
 

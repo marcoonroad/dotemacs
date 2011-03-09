@@ -24,17 +24,6 @@
 (setq js2-highlight-external-variables t)
 
 
-;; Mode-dependent configurations
-(add-hook 'js2-mode-hook
-		  (lambda ()
-			;; Style for boxed comments
-			(make-local-variable 'rebox-default-style)
-			(setq rebox-default-style 243)
-
-			;; Enables sending stuff directly to Conkeror
-			(moz-minor-mode 1)))
-
-
 ;; ----------------------------------------------------------------------------
 ;; Utility functions
 ;; ----------------------------------------------------------------------------
@@ -59,14 +48,4 @@ scripts."
 			(local-set-key      "\t"       'self-insert-command)
 			
 			; Toggle highlighting assigning to global vars
-			(local-set-key "\C-ce"    'js2-toggle-external-warnings)
-
-			; Rebox the comment at the cursor
-			(local-set-key "\M-q" 'rebox-comment)
-
-			; Moz-repl stuff
-			(local-set-key "\C-x\C-e" 'js-send-last-sexp)
-			(local-set-key "\C-\M-x"  'js-send-last-sexp-and-go)
-			(local-set-key "\C-cb"    'js-send-buffer)
-			(local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
-			(local-set-key "\C-cl"    'js-load-file-and-go)))
+			(local-set-key "\C-ce"    'js2-toggle-external-warnings)))
