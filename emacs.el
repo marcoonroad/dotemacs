@@ -19,7 +19,7 @@
             "pymacs"
             "renpy"
             "tumble"
-            "twittering-mode"
+            "twmode"
             "whitespace"
             "yasnippet"
             "anything")
