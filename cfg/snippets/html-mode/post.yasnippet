@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: post
+# key: post
+# --
+{% extends "_post${1:_en}.dhtml %}
+
+{% hyde
+   title:    $2
+   snip:     $3
+   created:  `(insert (format-time-string "%Y-%m-%d %T"))`
+   exclude:  ${4:True}
+%}
+
+{% block article %}
+$0
+{% endblock %}
