@@ -1,0 +1,8 @@
+;;-*-coding: emacs-mule;-*-
+(define-abbrev-table 'global-abbrev-table
+  '(("emoprog" "‘£¨ œôøö—«Øœôøö‘£©" nil 0)
+	("lquo" "‘¡°" nil 0)
+	("rquo" "‘¡±" nil 0)
+	("emd"  "•¡·" nil 0)
+	("end"  "•¡¹" nil 0)
+))

@@ -1,0 +1,22 @@
+syntax: glob
+*~
+\#*\#
+auto-save-list
+elim
+session*
+url
+*.dat
+ignore
+pkg
+TODO
+README
+*.elc
+.git*
+*.rb
+*.gpg
+twittering-mode/doc
+twittering-mode/test
+twittering-mode/howto
+*.nosearch
+cfg
+
