@@ -112,6 +112,25 @@ if not can_build:
     exit(-1)
 
 # Otherwise, just build the stuff
+info("Getting stuff from the interwebz")
+repos = open(".hgsub", "r")
+for line in repos:
+    if not line.strip(): continue
+    folder, repo = line.split("=")
+    folder = folder.strip()
+    match  = re.match("\[(.+?)\](.+)", repo.strip())
+    prog   = match.group(1)
+    repo   = match.group(2)
+
+    if not os.path.exists(folder):
+        cmd = "clone"
+        if prog == "svn": cmd = "co"
+        check_run([prog, cmd, repo, folder]
+                 ,"[%s] %s" % (prog,folder))
+    else:
+        warn("[%s] %s... exists, moving on." % (prog, folder))
+
+
 info("Byte compiling EVERYTHING")
 byte_compile("sorella"
             ,"vendor/ahg"
