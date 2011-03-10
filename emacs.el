@@ -40,8 +40,8 @@
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
-(autoload 'js2-mode       "js2"           nil t)
-(autoload 'markdown-mode  "markdown-mode" nil t)
+(autoload 'js2-mode       "build/js2-mode" nil t)
+(autoload 'markdown-mode  "markdown-mode"  nil t)
 
 ;; Pymacs stuff
 (autoload 'pymacs-apply  "pymacs")
