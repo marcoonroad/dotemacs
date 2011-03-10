@@ -24,6 +24,12 @@
 (setq js2-highlight-external-variables t)
 
 
+;; Make sure we use tabs for indentation
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t)))
+
+
 ;; ----------------------------------------------------------------------------
 ;; Utility functions
 ;; ----------------------------------------------------------------------------
