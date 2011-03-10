@@ -19,6 +19,7 @@ Requirements
 - [color-theme][]
 
 **Optional stuff:**
+
 - Node 0.4.2+
 - CoffeeScript 1.0.0+
 
