@@ -11,16 +11,16 @@ be colourful without being too much distracting.
 Requirements
 ------------
 
-Emacs 22+ (obviously)
-Git
-SVN
-Python
-Make
-[color-theme][]
+- Emacs 22+ (obviously)
+- Git
+- SVN
+- Python
+- Make
+- [color-theme][]
 
-Optional stuff:
-Node 0.4.2+
-CoffeeScript 1.0.0+
+**Optional stuff:**
+- Node 0.4.2+
+- CoffeeScript 1.0.0+
 
 
 [color-theme]: http://www.nongnu.org/color-theme/
