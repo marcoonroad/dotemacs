@@ -12,6 +12,7 @@
     (add-to-list 'load-path (concat "~/.emacs.d/vendor/" module))))
     
 (vendor-add "ahg"
+            "batch-mode"
             "coffee-mode"
             "jade-mode"
             "js2-mode"
@@ -26,15 +27,12 @@
 
 
 ;; --[ load stuff ]------------------------------------------------------------
-(require 'pymacs)           ; python bindings for emacs-lisp
 (require 'yasnippet)        ; small code snippets
 (require 'tumble)           ; tumblr blogging platform client
 (require 'renpy)            ; Ren'Py mode, ohai
 (require 'whitespace)       ; For tab visualization
 (require 'ahg)              ; mercurial gawdness
 (require 'twittering-mode)  ; tweets
-(require 'jade-mode)
-(require 'coffee-mode)
 (require 'color-theme)
 (require 'anything)
 
@@ -42,6 +40,9 @@
 ;; --[ Autoload ]--------------------------------------------------------------
 (autoload 'js2-mode       "build/js2-mode" nil t)
 (autoload 'markdown-mode  "markdown-mode"  nil t)
+(autoload 'batch-mode     "batch-mode"     nil t)
+(autoload 'coffee-mode    "coffee-mode"    nil t)
+(autoload 'jade-mode      "jade-mode"      nil t)
 
 ;; Pymacs stuff
 (autoload 'pymacs-apply  "pymacs")
@@ -49,8 +50,6 @@
 (autoload 'pymacs-eval   "pymacs" nil t)
 (autoload 'pymacs-exec   "pymacs" nil t)
 (autoload 'pymacs-load   "pymacs" nil t)
-(autoload 'rebox-comment "rebox"  nil t)
-(autoload 'rebox-region  "rebox"  nil t)
 
 
 ;; --[ Automodes ]-------------------------------------------------------------
