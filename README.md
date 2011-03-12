@@ -5,7 +5,7 @@ This is my emacs configuration, it's mostly for JavaScript and webdev
 stuff. But also some of Python. It also has my own theme, that tries to
 be colourful without being too much distracting.
 
-![](https://github.com/killdream/dotemacs/raw/master/stuff/screenshot.png)
+![](http://dl.dropbox.com/u/4429200/candy-chain.png)
 
 
 Requirements
@@ -34,7 +34,7 @@ Simply change to the root dir, and run the make script (and I mean the
 script, not the make tool...):
 
     cd ~/.emacs.d
-    ./make
+    python make
     
 This will pull everything you need from the interwebz (if you haven't
 yet), byte compile the stuff and build some packages.
