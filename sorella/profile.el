@@ -14,6 +14,7 @@
 (load "sorella/coffee")
 (load "sorella/html")
 (load "sorella/js2")
+(load "sorella/lisp")
 (load "sorella/twittering")
 (load "sorella/yasnippet")
 

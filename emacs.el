@@ -23,7 +23,8 @@
             "twmode"
             "whitespace"
             "yasnippet"
-            "anything")
+            "anything"
+            "slime")
 
 
 ;; --[ load stuff ]------------------------------------------------------------
@@ -35,6 +36,7 @@
 (require 'twittering-mode)  ; tweets
 (require 'color-theme)
 (require 'anything)
+(require 'slime)
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
