@@ -8,3 +8,4 @@ vendor/tumble        = [git]git://github.com/febuiles/tumble.git
 vendor/twmode        = [git]git://github.com/hayamiz/twittering-mode.git
 vendor/yasnippet     = [svn]http://yasnippet.googlecode.com/svn/trunk/
 vendor/slime         = [git]git://github.com/nablaone/slime.git
+vendor/candy-chain   = [git]git://github.com/killdream/candy-chain.git

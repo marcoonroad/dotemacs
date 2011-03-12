@@ -13,6 +13,7 @@
     
 (vendor-add "ahg"
             "batch-mode"
+            "candy-chain"
             "coffee-mode"
             "jade-mode"
             "js2-mode"

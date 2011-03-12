@@ -3,7 +3,7 @@
 ;; ----------------------------------------------------------------------------
 ;; Base customization
 (load "sorella/emacs")
-(load "sorella/candy-chain-theme")
+(load "candy-chain-theme")
 (load "sorella/spelling")
 (load "sorella/vc")
 (load "sorella/whitespace")
@@ -22,3 +22,12 @@
 ;; Applies the colour theme
 (color-theme-initialize)
 (color-theme-candy-chain)
+
+
+;; Silly stuff to allow me testing the changes I do without too much hassle
+(defun candy-chain-reload-theme ()
+  (interactive)
+  (eval-buffer)
+  (color-theme-candy-chain))
+
+(global-set-key "\C-ct" 'candy-chain-reload-theme)
