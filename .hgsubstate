@@ -1,5 +1,6 @@
 5d6a8894cdc264bef89319d9bf10a167fbbddbc6 vendor/anything
 5bee8fe5747a9e9dda54ba234d0f3b025e1459fe vendor/candy-chain
+4abcd792a5c03766e64b734439f065da4e087f40 vendor/clojure-mode
 bcafe8294b55e3e17bbd99381b395ddc37e1e838 vendor/coffee-mode
 5552c5eaed03537d024b8229d08bfb9c56a09c39 vendor/jade-mode
 80 vendor/js2-mode

@@ -14,6 +14,7 @@
 (vendor-add "ahg"
             "batch-mode"
             "candy-chain"
+            "clojure-mode"
             "coffee-mode"
             "jade-mode"
             "js2-mode"
@@ -46,6 +47,7 @@
 (autoload 'batch-mode     "batch-mode"     nil t)
 (autoload 'coffee-mode    "coffee-mode"    nil t)
 (autoload 'jade-mode      "jade-mode"      nil t)
+(autoload 'clojure-mode   "clojure-mode"   nil t)
 
 ;; Pymacs stuff
 (autoload 'pymacs-apply  "pymacs")
@@ -61,7 +63,7 @@
 (add-to-list 'auto-mode-alist '("\\.scss$"        . css-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"          . markdown-mode))
-
+(add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
 (yas/load-directory "~/.emacs.d/cfg/snippets")
