@@ -100,3 +100,10 @@
 ;; Resizes the window
 (global-set-key "\C-xw" 'window-resize)
 
+;; Sane stuff for finishing edition on a server stuff
+(add-hook 'server-switch-hook
+            (lambda ()
+              (when (current-local-map)
+                (use-local-map (copy-keymap (current-local-map))))
+	      (when server-buffer-clients
+		(local-set-key "\C-xk" 'server-edit))))
