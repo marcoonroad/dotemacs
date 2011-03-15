@@ -72,8 +72,3 @@
 ;; --[ custom stuff ]----------------------------------------------------------
 (quietly-read-abbrev-file "~/.emacs.d/.abbrevs")
 (load "sorella/profile")
-
-
-;; --[ start server ]----------------------------------------------------------
-(server-start)
-
