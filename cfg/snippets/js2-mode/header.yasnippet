@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Main header
+# --
+/******************************************************************************
+ *${1:$(make-string (/ (- 74 (string-width text)) 2) ?\ )}~${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}~${1:$(make-string (ceiling (/ (- 74 (string-width text)) 2.0)) ?\ )}*
+ *${1:$(make-string (/ (- 70 (string-width text)) 2) ?\ )}${1:$(make-string (+ 6 (string-width text)) ?\‾)}${1:$(make-string (/ (- 71 (string-width text)) 2) ?\ )}*
+ * ${2:description}${2:$(make-string (- 75 (string-width text)) ?\ )}*
+ *${3:$(make-string (/ (- 72 (string-width text)) 2) ?\ )}${3:$(make-string (+ 4 (string-width text)) ?\_)}${3:$(make-string (ceiling (/ (- 72 (string-width text)) 2.0)) ?\ )}*
+ *${3:$(make-string (/ (- 74 (string-width text)) 2) ?\ )} ${3: Copyright (c) ${4:`(insert (format-time-string "%Y"))`} ${5:Quildreen Motta} // Licenced under ${6:MIT/X11}} ${3:$(make-string (/ (- 75 (string-width text)) 2) ?\ )}*
+ ******************************************************************************/
