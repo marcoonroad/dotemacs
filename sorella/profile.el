@@ -15,8 +15,10 @@
 (load "sorella/html")
 (load "sorella/js2")
 (load "sorella/lisp")
+(load "sorella/python")
 (load "sorella/twittering")
 (load "sorella/yasnippet")
+(load "sorella/erc")
 
 
 ;; Applies the colour theme
