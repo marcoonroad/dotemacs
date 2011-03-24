@@ -19,6 +19,7 @@
 (load "sorella/twittering")
 (load "sorella/yasnippet")
 (load "sorella/erc")
+(load "sorella/org")
 
 
 ;; Applies the colour theme
