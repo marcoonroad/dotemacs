@@ -20,6 +20,7 @@
 (load "sorella/yasnippet")
 (load "sorella/erc")
 (load "sorella/org")
+(load "sorella/emms")
 
 
 ;; Applies the colour theme

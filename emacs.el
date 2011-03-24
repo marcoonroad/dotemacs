@@ -16,6 +16,7 @@
             "candy-chain"
             "clojure-mode"
             "coffee-mode"
+            "emms/lisp"
             "jade-mode"
             "js2-mode"
             "markdown-mode"
@@ -39,6 +40,7 @@
 (require 'color-theme)
 (require 'anything)
 (require 'slime)
+(require 'emms-setup)
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
