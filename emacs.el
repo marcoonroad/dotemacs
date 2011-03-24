@@ -66,7 +66,8 @@
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
-(yas/load-directory "~/.emacs.d/cfg/snippets")
+(setq yas/root-directory "~/.emacs.d/cfg/snippets")
+(yas/load-directory yas/root-directory)
 
 
 ;; --[ custom stuff ]----------------------------------------------------------
