@@ -12,10 +12,11 @@
 
 (setq erc-autojoin-channels-alist
       '(("freenode.net" "#e"
-                        "##javascript"
+                        "#emacs"
                         "#coffeescript"
+                        "##javascript"
                         "#prototype"
-                        "#silexars"
                         "#python-br"
+                        "#silexars"
                         "#ubuntu-br"
                         )))
