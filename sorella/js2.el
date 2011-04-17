@@ -42,16 +42,3 @@ scripts."
   (setq js2-highlight-external-variables
 		(not js2-highlight-external-variables))
   (js2-mode)) ; reloads the mode to apply the new configuration
-
-
-;; ----------------------------------------------------------------------------
-;; Shortcut keys
-;; ----------------------------------------------------------------------------
-(add-hook 'js2-mode-hook
-		  (lambda ()
-			; Uses tab as self insert, and C-TAB for js2-mode's indent
-			(local-set-key (kbd "<C-tab>") 'indent-for-tab-command)
-			(local-set-key      "\t"       'self-insert-command)
-			
-			; Toggle highlighting assigning to global vars
-			(local-set-key "\C-ce"    'js2-toggle-external-warnings)))
