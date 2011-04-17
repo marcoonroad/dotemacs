@@ -1,7 +1,7 @@
 vendor/anything      = [git]git://repo.or.cz/anything-config.git
 vendor/coffee-mode   = [git]git://github.com/defunkt/coffee-mode.git
 vendor/jade-mode     = [git]git://github.com/brianc/jade-mode.git
-vendor/js2-mode      = [svn]http://js2-mode.googlecode.com/svn/trunk/
+vendor/js2-mode      = [git]git://github.com/mooz/js2-mode.git
 vendor/markdown-mode = [git]git://jblevins.org/git/markdown-mode.git
 vendor/pymacs        = [git]git://github.com/pinard/Pymacs.git
 vendor/tumble        = [git]git://github.com/febuiles/tumble.git
