@@ -7,4 +7,4 @@
 
 (setq org-return-follows-link t)
 
-(setq org-agenda-files '("~/Dropbox/main.org"))
+(setq org-agenda-files '("~/Dropbox/org/main.org"))

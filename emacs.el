@@ -14,9 +14,11 @@
 (vendor-add "ahg"
             "batch-mode"
             "candy-chain"
+            "color-theme"
             "clojure-mode"
             "coffee-mode"
             "emms/lisp"
+            "edje"
             "jade-mode"
             "js2-mode"
             "markdown-mode"
@@ -50,6 +52,7 @@
 (autoload 'coffee-mode    "coffee-mode"    nil t)
 (autoload 'jade-mode      "jade-mode"      nil t)
 (autoload 'clojure-mode   "clojure-mode"   nil t)
+(autoload 'edje-mode      "edje-mode"      nil t)
 
 ;; Pymacs stuff
 (autoload 'pymacs-apply  "pymacs")
@@ -66,6 +69,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"          . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
 (setq yas/root-directory "~/.emacs.d/cfg/snippets")

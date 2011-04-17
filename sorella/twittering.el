@@ -34,9 +34,10 @@ Requires the notify-send binary to be installed."
 
 ;; Timelines that should be fetched from the start
 (setq twittering-initial-timeline-spec-string
-	  '(":home"
-		":replies"
-		":direct_messages"))
+	  '(":replies"
+		":direct_messages"
+        ":search/pyweek/"
+        ":home"))
 
 
 ;; ----------------------------------------------------------------------------*

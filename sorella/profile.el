@@ -20,11 +20,10 @@
 (load "sorella/yasnippet")
 (load "sorella/erc")
 (load "sorella/org")
-(load "sorella/emms")
+;(load "sorella/emms")
 
 
 ;; Applies the colour theme
-(color-theme-initialize)
 (color-theme-candy-chain)
 
 
