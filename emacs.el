@@ -46,7 +46,7 @@
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
-(autoload 'js2-mode       "build/js2-mode" nil t)
+(autoload 'js2-mode       "js2-mode"       nil t)
 (autoload 'markdown-mode  "markdown-mode"  nil t)
 (autoload 'batch-mode     "batch-mode"     nil t)
 (autoload 'coffee-mode    "coffee-mode"    nil t)
