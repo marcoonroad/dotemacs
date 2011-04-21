@@ -13,7 +13,7 @@
 ;; ----------------------------------------------------------------------------
 (defun flyspell-enable-for-modes (&rest modes)
   (dolist (mode modes)
-	(add-hook mode (lambda() (flyspell-mode 1)))))
+    (add-hook mode (lambda() (flyspell-mode 1)))))
 
 
 ;; ----------------------------------------------------------------------------
@@ -21,10 +21,10 @@
 ;; ----------------------------------------------------------------------------
 (flyspell-enable-for-modes 'log-edit-mode-hook     ;; Editing commit messages
 
-						   'markdown-mode-hook     ;; \
-						   'fundamental-mode-hook  ;;  \  Plain text
-						   'text-mode-hook         ;;  /    modes
-						   'rst-mode-hook)         ;; /
+                           'markdown-mode-hook     ;; \
+                           'fundamental-mode-hook  ;;  \  Plain text
+                           'text-mode-hook         ;;  /    modes
+                           'rst-mode-hook)         ;; /
 
 
 ;; ----------------------------------------------------------------------------
