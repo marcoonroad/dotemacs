@@ -14,8 +14,6 @@ Requirements
 - Emacs 22+ (obviously)
 - Git
 - SVN
-- Make
-- [color-theme][]
 
 **Optional stuff:**
 

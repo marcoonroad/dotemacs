@@ -121,7 +121,7 @@
 
 (defun builder-check-lib-deps ()
   (builder-print "")
-  (builder-check-lib "color-theme"))
+  t)
 
 (defun builder-check-bin-deps ()
   (and (builder-check-bin "git"   "1.7"  t)
