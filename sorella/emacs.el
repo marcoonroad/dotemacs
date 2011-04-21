@@ -34,7 +34,7 @@
 
 ;; Uses the default browser in my system as the default Emacs browser
 (setq browse-url-browser-function 'browse-url-generic
-	  browse-url-generic-program  "/etc/alternatives/x-www-browser")
+      browse-url-generic-program  "/etc/alternatives/x-www-browser")
 
 ;; Don't clutter my file tree with backups, organize them instead
 (setq backup-by-copying      t
@@ -105,5 +105,5 @@
             (lambda ()
               (when (current-local-map)
                 (use-local-map (copy-keymap (current-local-map))))
-	      (when server-buffer-clients
-		(local-set-key "\C-xk" 'server-edit))))
+          (when server-buffer-clients
+        (local-set-key "\C-xk" 'server-edit))))

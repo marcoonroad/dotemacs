@@ -33,5 +33,5 @@ Really useful for when editing configuration for Conkeror or some Node
 scripts."
   (interactive)
   (setq js2-highlight-external-variables
-		(not js2-highlight-external-variables))
+        (not js2-highlight-external-variables))
   (js2-mode)) ; reloads the mode to apply the new configuration

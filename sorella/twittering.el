@@ -6,11 +6,11 @@
 
 Requires the notify-send binary to be installed."
   (let ((n twittering-new-tweets-count))
-	(start-process "twittering-notify" nil "notify-send"
-				   "-i" twittering-emacs-icon
-				   (format "twmode — %s" twittering-new-tweets-spec)
-				   (format "You have %d new tweet%s"
-						   (n (if (> n 1) "s" ""))))))
+    (start-process "twittering-notify" nil "notify-send"
+                   "-i" twittering-emacs-icon
+                   (format "twmode — %s" twittering-new-tweets-spec)
+                   (format "You have %d new tweet%s"
+                           (n (if (> n 1) "s" ""))))))
 
 
 ;; ----------------------------------------------------------------------------
@@ -34,8 +34,8 @@ Requires the notify-send binary to be installed."
 
 ;; Timelines that should be fetched from the start
 (setq twittering-initial-timeline-spec-string
-	  '(":replies"
-		":direct_messages"
+      '(":replies"
+        ":direct_messages"
         ":search/pyweek/"
         ":home"))
 
@@ -44,8 +44,8 @@ Requires the notify-send binary to be installed."
 ;; Shortcut keys
 ;; ----------------------------------------------------------------------------
 (add-hook 'twittering-mode-hook
-		  (lambda ()
-			(local-set-key "F"     'twittering-friends-timeline)
-			(local-set-key "R"     'twittering-replies-timeline)
-			(local-set-key "U"     'twittering-user-timeline)
-			(local-set-key "\C-cr" 'twittering-retweet)))
+          (lambda ()
+            (local-set-key "F"     'twittering-friends-timeline)
+            (local-set-key "R"     'twittering-replies-timeline)
+            (local-set-key "U"     'twittering-user-timeline)
+            (local-set-key "\C-cr" 'twittering-retweet)))
