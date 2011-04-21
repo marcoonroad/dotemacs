@@ -14,7 +14,6 @@ Requirements
 - Emacs 22+ (obviously)
 - Git
 - SVN
-- Python
 - Make
 - [color-theme][]
 
@@ -30,11 +29,10 @@ Requirements
 Building
 --------
 
-Simply change to the root dir, and run the make script (and I mean the
+Simply change to the root dir, and run the build script (and I mean the
 script, not the make tool...):
 
-    cd ~/.emacs.d
-    python make
+    emacs -batch -l compile-all.el -f builder-make-all
     
 This will pull everything you need from the interwebz (if you haven't
 yet), byte compile the stuff and build some packages.
