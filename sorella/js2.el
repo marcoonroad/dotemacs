@@ -23,6 +23,10 @@
 ;; Highlights external variables by default
 (setq js2-highlight-external-variables t)
 
+;; Indentation
+(setq js2-pretty-multiline-decl-indentation-p t)
+(setq js2-bounce-indent-p t)
+
 ;; ----------------------------------------------------------------------------
 ;; Utility functions
 ;; ----------------------------------------------------------------------------
@@ -35,3 +39,11 @@ scripts."
   (setq js2-highlight-external-variables
         (not js2-highlight-external-variables))
   (js2-mode)) ; reloads the mode to apply the new configuration
+
+
+;; ----------------------------------------------------------------------------
+;; Keys
+;; ----------------------------------------------------------------------------
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (local-set-key (kbd "<backtab>") #'js2-indent-bounce-backwards)))
