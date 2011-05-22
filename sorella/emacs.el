@@ -68,6 +68,11 @@
               ;; breaks from the loop otherwise
               (t nil))))))
 
+;; Inserts current date
+(defun current-date ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
+
 
 ;; ----------------------------------------------------------------------------
 ;; Keyboard shortcuts
