@@ -70,6 +70,7 @@
 (add-to-list 'auto-mode-alist '("\\.md$"          . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$"        . jade-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
 (setq yas/root-directory "~/.emacs.d/cfg/snippets")
