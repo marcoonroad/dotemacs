@@ -36,7 +36,8 @@ Requires the notify-send binary to be installed."
 (setq twittering-initial-timeline-spec-string
       '(":replies"
         ":direct_messages"
-        ":search/pyweek/"
+        ":search/javascript/"
+        ":search/es5/"
         ":home"))
 
 
