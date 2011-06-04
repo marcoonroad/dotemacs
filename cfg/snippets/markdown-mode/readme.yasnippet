@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: readme
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# expand-env: ((yas/wrap-around-region 'nil))
 # --
 ${1:LibraryName}
 ${1:$(make-string (string-width text) ?=)}
@@ -46,7 +46,7 @@ To get a list of all available tasks:
 
     $ jake --tasks
     
-To filter the task list, for example, to get all tasks that contain `foo`:
+To filter the task list, for example, to get all tasks that contain \`foo\`:
 
     $ jake --tasks foo
     
@@ -60,8 +60,8 @@ To build both the distribution scripts and documentation:
 
     $ jake build
     
-Individual things are placed inside the `build` namespace. You can just
-`jake --tasks build` from the command line to get a list of them.
+Individual things are placed inside the \`build\` namespace. You can just
+\`jake --tasks build\` from the command line to get a list of them.
 
 [Jake]:     https://github.com/mde/jake
 [UglifyJS]: https://github.com/mishoo/UglifyJS
@@ -80,7 +80,7 @@ You can build the actual documentation using:
     $ jake build:docs
     
 Also, the source code should be pretty well documented using OrpheOS's
-`calliope` documentation conventions. If you see functionality that miss
+\`calliope\` documentation conventions. If you see functionality that miss
 documentation on why it exists, the implications of using it, or that
 just aren't explained well, please file a bug report :3
 
@@ -104,7 +104,7 @@ just aren't explained well, please file a bug report :3
 
 $1 is licensed under the delicious and permissive [MIT][] licence. you
 can happily copy, share, modify, sell or whatever — refer to the actual
-licence text for `less` information:
+licence text for \`less\` information:
 
     $ less LICENCE.txt
     
