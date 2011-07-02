@@ -105,6 +105,19 @@
 ;; Resizes the window
 (global-set-key "\C-xw" 'window-resize)
 
+;; Align regexp
+(global-set-key (kbd "C-;") 'align-regexp)
+
+;; Moving between windows
+(global-set-key (kbd "<M-left>")  'windmove-left)
+(global-set-key (kbd "<M-right>") 'windmove-right)
+(global-set-key (kbd "<M-up>")    'windmove-up)
+(global-set-key (kbd "<M-down>")  'windmove-down)
+
+;; Scrolling
+(global-set-key (kbd "C-,") (lambda() (interactive) (scroll-up   1)))
+(global-set-key (kbd "C-.") (lambda() (interactive) (scroll-down 1)))
+
 ;; Sane stuff for finishing edition on a server stuff
 (add-hook 'server-switch-hook
             (lambda ()
