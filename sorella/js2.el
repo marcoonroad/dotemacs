@@ -46,4 +46,9 @@ scripts."
 ;; ----------------------------------------------------------------------------
 (add-hook 'js2-mode-hook
           (lambda ()
+            (local-set-key "\C-cjh" 'js2-mark-defun)
+            (local-set-key "\C-cje" 'js2-next-error)
+            (local-set-key "\C-cjf" 'js2-mode-toggle-hide-functions)
+            (local-set-key "\C-cjc" 'js2-mode-toggle-//-comment)
+            (local-set-key "\C-cjt" 'js2-mode-toggle-element)
             (local-set-key (kbd "<backtab>") #'js2-indent-bounce-backwards)))
