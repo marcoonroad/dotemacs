@@ -73,6 +73,18 @@
   (interactive)
   (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
 
+;; Recompiles an emacs lisp file whenever we save (if a compiled version
+;; already exists, that is)
+(defun auto-byte-recompile ()
+"If the current buffer is in emacs-lisp-mode and there already exists an `.elc'
+file corresponding to the current buffer file, then recompile the file."
+  (interactive)
+  (when (and (eq major-mode 'emacs-lisp-mode)
+             (file-exists-p (byte-compile-dest-file buffer-file-name)))
+    (byte-compile-file buffer-file-name)))
+
+(add-hook 'after-save-hook 'auto-byte-recompile)
+
 
 ;; ----------------------------------------------------------------------------
 ;; Keyboard shortcuts
