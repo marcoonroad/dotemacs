@@ -21,6 +21,7 @@
             "edje"
             "jade-mode"
             "js2-mode"
+            "js3-mode"
             "markdown-mode"
             "pymacs"
             "renpy"
@@ -29,6 +30,7 @@
             "whitespace"
             "yasnippet"
             "anything"
+            "w3m"
             "slime")
 
 
