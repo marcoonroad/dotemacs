@@ -174,8 +174,8 @@
 (defun builder-byte-compile ()
   (builder-print-header "-- Byte compiling *EVERYTHING*...")
   (let ((root default-directory))
-    (byte-recompile-directory (concat root "sorella"))
-    (byte-recompile-directory (concat root "vendor"))))
+    (byte-recompile-directory (concat root "sorella") 0 t)
+    (byte-recompile-directory (concat root "vendor") 0 t)))
 
 ;;
 ;; Makes everything
