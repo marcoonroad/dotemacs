@@ -48,7 +48,6 @@
 (require 'anything)
 (require 'slime)
 (require 'emms-setup)
-(require 'jde)
 
 (load "cedet")
 
@@ -61,6 +60,7 @@
 (autoload 'jade-mode      "jade-mode"      nil t)
 (autoload 'clojure-mode   "clojure-mode"   nil t)
 (autoload 'edje-mode      "edje-mode"      nil t)
+(autoload 'jde-mode       "jde-mode"       nil t)
 
 ;; Pymacs stuff
 (autoload 'pymacs-apply  "pymacs")
@@ -79,6 +79,7 @@
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$"        . jade-mode))
+(add-to-list 'auto-mode-alist '("\\.java$"        . jde-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
 (setq yas/root-directory "~/.emacs.d/cfg/snippets")
