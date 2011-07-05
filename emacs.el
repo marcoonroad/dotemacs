@@ -14,10 +14,12 @@
 (vendor-add "ahg"
             "batch-mode"
             "candy-chain"
+            "cedet/common"
             "color-theme"
             "clojure-mode"
             "coffee-mode"
             "emms/lisp"
+            "elib"
             "edje"
             "jade-mode"
             "js2-mode"
@@ -45,6 +47,8 @@
 (require 'anything)
 (require 'slime)
 (require 'emms-setup)
+
+(load "cedet")
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
