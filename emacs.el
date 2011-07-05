@@ -22,6 +22,7 @@
             "elib"
             "edje"
             "jade-mode"
+            "jdee/lisp"
             "js2-mode"
             "js3-mode"
             "markdown-mode"
@@ -47,6 +48,7 @@
 (require 'anything)
 (require 'slime)
 (require 'emms-setup)
+(require 'jde)
 
 (load "cedet")
 

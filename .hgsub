@@ -12,4 +12,3 @@ vendor/candy-chain   = [git]git://github.com/killdream/candy-chain.git
 vendor/clojure-mode  = [git]git://github.com/technomancy/clojure-mode.git
 vendor/emms          = [git]git://git.sv.gnu.org/emms.git
 vendor/w3m           = [git]git://github.com/emacsmirror/w3m.git
-vendor/jdee          = [svn]https://jdee.svn.sourceforge.net/svnroot/jdee/trunk/jdee
