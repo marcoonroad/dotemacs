@@ -8,5 +8,5 @@ pkg
 *.elc
 .git*
 *.gpg
-
-
+.svn
+emms/scores
