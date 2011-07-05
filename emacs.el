@@ -19,6 +19,7 @@
             "clojure-mode"
             "coffee-mode"
             "emms/lisp"
+            "ecb"
             "elib"
             "edje"
             "jade-mode"
@@ -48,6 +49,7 @@
 (require 'anything)
 (require 'slime)
 (require 'emms-setup)
+(require 'ecb)
 
 (load "cedet")
 
