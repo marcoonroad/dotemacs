@@ -14,7 +14,6 @@
 (vendor-add "ahg"
             "batch-mode"
             "candy-chain"
-            "cedet/common"
             "color-theme"
             "clojure-mode"
             "coffee-mode"
@@ -48,10 +47,8 @@
 (require 'color-theme)
 (require 'anything)
 (require 'slime)
-(require 'emms-setup)
-(require 'ecb)
-
-(load "cedet")
+;(require 'emms-setup)
+;(require 'ecb)
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
@@ -62,7 +59,7 @@
 (autoload 'jade-mode      "jade-mode"      nil t)
 (autoload 'clojure-mode   "clojure-mode"   nil t)
 (autoload 'edje-mode      "edje-mode"      nil t)
-(autoload 'jde-mode       "jde-mode"       nil t)
+;(autoload 'jde-mode       "jde-mode"       nil t)
 
 ;; Pymacs stuff
 (autoload 'pymacs-apply  "pymacs")
@@ -81,7 +78,7 @@
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$"        . jade-mode))
-(add-to-list 'auto-mode-alist '("\\.java$"        . jde-mode))
+;(add-to-list 'auto-mode-alist '("\\.java$"        . jde-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
 (setq yas/root-directory "~/.emacs.d/cfg/snippets")
