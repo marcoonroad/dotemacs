@@ -104,6 +104,7 @@ file corresponding to the current buffer file, then recompile the file."
 
 ;; Some minor and very useful modes
 (global-set-key "\C-cmf" 'auto-fill-mode)
+(global-set-key "\C-cmr" 'rainbow-mode)
 
 ;; Tab to tab stop
 (global-set-key (kbd "C-\\") 'tab-to-tab-stop)

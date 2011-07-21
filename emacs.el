@@ -27,6 +27,7 @@
             "js3-mode"
             "markdown-mode"
             "pymacs"
+            "rainbow"
             "renpy"
             "tumble"
             "twmode"
@@ -47,12 +48,14 @@
 (require 'color-theme)
 (require 'anything)
 (require 'slime)
+(require 'rainbow-mode)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
 (autoload 'js2-mode       "js2-mode"       nil t)
+(autoload 'js3-mode       "js3"            nil t)
 (autoload 'markdown-mode  "markdown-mode"  nil t)
 (autoload 'batch-mode     "batch-mode"     nil t)
 (autoload 'coffee-mode    "coffee-mode"    nil t)
@@ -73,7 +76,7 @@
 (add-to-list 'auto-mode-alist '("\\.coffee$"      . coffee-mode))
 (add-to-list 'auto-mode-alist '("Cakefile"        . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$"        . css-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . javascript-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"          . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
