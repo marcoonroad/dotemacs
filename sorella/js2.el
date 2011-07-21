@@ -28,20 +28,6 @@
 (setq js2-bounce-indent-p t)
 
 ;; ----------------------------------------------------------------------------
-;; Utility functions
-;; ----------------------------------------------------------------------------
-(defun js2-toggle-external-warnings ()
-  "Allows warnings for global variables to be toggled on/off.
-
-Really useful for when editing configuration for Conkeror or some Node
-scripts."
-  (interactive)
-  (setq js2-highlight-external-variables
-        (not js2-highlight-external-variables))
-  (js2-mode)) ; reloads the mode to apply the new configuration
-
-
-;; ----------------------------------------------------------------------------
 ;; Keys
 ;; ----------------------------------------------------------------------------
 (add-hook 'js2-mode-hook
