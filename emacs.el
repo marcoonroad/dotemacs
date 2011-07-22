@@ -25,6 +25,7 @@
             "jdee/lisp"
             "js2-mode"
             "js3-mode"
+            "lambda"
             "markdown-mode"
             "pymacs"
             "rainbow"
@@ -35,7 +36,8 @@
             "yasnippet"
             "anything"
             "w3m"
-            "slime")
+            "slime"
+            "zencoding")
 
 
 ;; --[ load stuff ]------------------------------------------------------------
@@ -49,6 +51,7 @@
 (require 'anything)
 (require 'slime)
 (require 'rainbow-mode)
+(require 'lambda-mode)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
@@ -62,6 +65,7 @@
 (autoload 'jade-mode      "jade-mode"      nil t)
 (autoload 'clojure-mode   "clojure-mode"   nil t)
 (autoload 'edje-mode      "edje-mode"      nil t)
+(autoload 'zencoding-mode "zencoding-mode" nil t)
 ;(autoload 'jde-mode       "jde-mode"       nil t)
 
 ;; Pymacs stuff
