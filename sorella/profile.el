@@ -21,6 +21,7 @@
 (load "sorella/yasnippet")
 (load "sorella/erc")
 (load "sorella/org")
+(load "sorella/lambda")
 ;(load "sorella/emms")
 
 
