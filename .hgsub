@@ -15,4 +15,4 @@ vendor/w3m           = [git]git://github.com/emacsmirror/w3m.git
 vendor/ecb           = [git]git://github.com/emacsmirror/ecb.git
 vendor/js3-mode      = [git]git://github.com/thomblake/js3-mode.git
 vendor/rainbow       = [git]git://git.naquadah.org/rainbow.git 
-vendor/zencoding     = [git]https://github.com/rooney/zencoding.git
+vendor/zencoding     = [git]git://github.com/killdream/zencoding.git
