@@ -9,6 +9,8 @@
 
 (setq erc-public-away-p nil)
 (setq erc-prompt "\n>›")
+(setq erc-interpret-controls-p 'remove)
+(setq erc-interpret-mirc-color nil)
 
 (setq erc-autojoin-channels-alist
       '(("freenode.net" "##javascript"
