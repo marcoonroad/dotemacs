@@ -6,8 +6,12 @@
 (load "candy-chain-theme")
 (load "sorella/spelling")
 (load "sorella/vc")
-(load "sorella/whitespace")
 
+;; Utilities/minor modes
+(load "sorella/whitespace")
+(load "sorella/smex")
+(load "sorella/parfait")
+(load "sorella/vline")
 
 ;; Major theme customizations
 (load "sorella/c")
@@ -21,7 +25,6 @@
 (load "sorella/yasnippet")
 (load "sorella/erc")
 (load "sorella/org")
-(load "sorella/parfait")
 (load "sorella/markdown")
 ;(load "sorella/emms")
 

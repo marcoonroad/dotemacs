@@ -12,31 +12,37 @@
     (add-to-list 'load-path (concat "~/.emacs.d/vendor/" module))))
     
 (vendor-add "ahg"
+            "anything"
             "batch-mode"
             "candy-chain"
-            "color-theme"
             "clojure-mode"
             "coffee-mode"
-            "emms/lisp"
+            "color-theme"
             "ecb"
-            "elib"
             "edje"
+            "elib"
+            "emms/lisp"
             "jade-mode"
             "jdee/lisp"
             "js2-mode"
             "js3-mode"
             "lambda"
             "markdown-mode"
+            "parfait"
             "pymacs"
             "rainbow"
+            "rainbow-delimiters"
             "renpy"
+            "slime"
+            "smex"
             "tumble"
             "twmode"
+            "visual-basic"
+            "vbs-repl"
+            "vline"
+            "w3m"
             "whitespace"
             "yasnippet"
-            "anything"
-            "w3m"
-            "slime"
             "zencoding")
 
 
@@ -51,7 +57,11 @@
 (require 'anything)
 (require 'slime)
 (require 'rainbow-mode)
+(require 'rainbow-delimiters)
 (require 'lambda-mode)
+(require 'smex)
+(require 'vline)
+(require 'parfait-mode)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
@@ -85,6 +95,7 @@
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$"        . jade-mode))
+(add-to-list 'auto-mode-alist '("\\.vbs\\|\\.lss" . vbscript-mode))
 ;(add-to-list 'auto-mode-alist '("\\.java$"        . jde-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------

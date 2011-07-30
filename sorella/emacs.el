@@ -101,11 +101,12 @@ file corresponding to the current buffer file, then recompile the file."
 
 ;; Abbreviations
 (global-set-key (kbd "C-/") 'expand-abbrev)
+(global-set-key "\C-cl" 'font-lock-fontify-buffer)
 
 ;; Some minor and very useful modes
 (global-set-key "\C-cmf" 'auto-fill-mode)
 (global-set-key "\C-cmr" 'rainbow-mode)
-(global-set-key "\C-cml" 'lambda-mode)
+(global-set-key "\C-cmp" 'parfait-mode)
 (global-set-key "\C-cmz" 'zencoding-mode)
 
 ;; Tab to tab stop
