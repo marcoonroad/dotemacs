@@ -4,7 +4,7 @@
   (make-local-variable 'parfait-symtable)
   (parfait-add-symbols
    '(("\\<this\\(\\.\\|\\>\\)" . "@")
-     ("\\<return\\>"           . "⇐")
+     ("\\<return\\>"           . "←")
      ("\\<function\\>"         . "𝝺")
      ("\\>_\\<"                . "-")
      ("<="                     . "≤")
