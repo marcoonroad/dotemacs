@@ -26,6 +26,7 @@
 (load "sorella/erc")
 (load "sorella/org")
 (load "sorella/markdown")
+(load "sorella/visual-basic")
 ;(load "sorella/emms")
 
 

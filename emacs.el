@@ -62,6 +62,8 @@
 (require 'smex)
 (require 'vline)
 (require 'parfait-mode)
+(require 'visual-basic-mode)
+(require 'vbs-repl)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
