@@ -21,3 +21,6 @@ vendor/rainbow-delimiters = [git]git://github.com/emacsmirror/rainbow-delimiters
 vendor/smex               = [git]git://github.com/nonsequitur/smex.git
 vendor/vline              = [git]git://github.com/emacsmirror/vline.git
 vendor/vbs-repl           = [git]git://github.com/emacsmirror/vbs-repl.git
+vendor/lua-mode           = [git]git://github.com/immerrr/lua-mode.git
+vendor/org-mode           = [git]git://orgmode.org/org-mode.git
+vendor/htmlize            = [git]git://github.com/emacsmirror/htmlize.git
