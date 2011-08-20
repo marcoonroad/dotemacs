@@ -26,7 +26,9 @@
             "jdee/lisp"
             "js2-mode"
             "js3-mode"
+            "htmlize"
             "lambda"
+            "lua-mode"
             "markdown-mode"
             "parfait"
             "pymacs"
@@ -64,6 +66,7 @@
 (require 'parfait-mode)
 (require 'visual-basic-mode)
 (require 'vbs-repl)
+(require 'htmlize)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
@@ -78,6 +81,7 @@
 (autoload 'clojure-mode   "clojure-mode"   nil t)
 (autoload 'edje-mode      "edje-mode"      nil t)
 (autoload 'zencoding-mode "zencoding-mode" nil t)
+(autoload 'lua-mode       "lua-mode"       nil t)
 ;(autoload 'jde-mode       "jde-mode"       nil t)
 
 ;; Pymacs stuff
@@ -98,7 +102,10 @@
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$"        . jade-mode))
 (add-to-list 'auto-mode-alist '("\\.vbs\\|\\.lss" . vbscript-mode))
+(add-to-list 'auto-mode-alist '("\\.lua$"         . lua-mode))
 ;(add-to-list 'auto-mode-alist '("\\.java$"        . jde-mode))
+
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 ;; --[ YaSnippet ]-------------------------------------------------------------
 (setq yas/root-directory "~/.emacs.d/cfg/snippets")
