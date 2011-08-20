@@ -12,3 +12,5 @@ pkg
 .svn
 emms/scores
 archives
+bookmarks
+org-clock-save.el
