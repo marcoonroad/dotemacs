@@ -20,10 +20,8 @@
 ;; Modes where spelling is really important
 ;; ----------------------------------------------------------------------------
 (flyspell-enable-for-modes 'log-edit-mode-hook     ;; Editing commit messages
-
                            'markdown-mode-hook     ;; \
-                           'fundamental-mode-hook  ;;  \  Plain text
-                           'text-mode-hook         ;;  /    modes
+                           'text-mode-hook         ;;  -    modes
                            'rst-mode-hook)         ;; /
 
 
