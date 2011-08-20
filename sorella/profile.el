@@ -9,7 +9,7 @@
 
 ;; Utilities/minor modes
 (load "sorella/whitespace")
-(load "sorella/smex")
+;(load "sorella/smex")
 (load "sorella/parfait")
 (load "sorella/vline")
 
