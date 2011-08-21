@@ -8,6 +8,7 @@ b5f1ca64c81b53e420e0139c44f34411265bea54 vendor/htmlize
 5552c5eaed03537d024b8229d08bfb9c56a09c39 vendor/jade-mode
 c8a76fb8777b8007e35bf34c23af95234387fd7e vendor/js2-mode
 c37a57c6af569aa6cbb4d0beb9245a17c34d3bbb vendor/js3-mode
+8b6427b24328b480bfc1a0a363f10343e04b8256 vendor/lorem-ipsum
 3367502fc1bddb78f33a7ccc833a92e7285d9bba vendor/lua-mode
 16a98941f90f0ef816c3f7cc11f322806ee00cc0 vendor/markdown-mode
 0c6b67c191e886b0a2162684e087cdd15a724907 vendor/org-mode

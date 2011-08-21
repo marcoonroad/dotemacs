@@ -28,6 +28,7 @@
             "js3-mode"
             "htmlize"
             "lambda"
+            "lorem-ipsum"
             "lua-mode"
             "markdown-mode"
             "parfait"
@@ -67,6 +68,7 @@
 (require 'visual-basic-mode)
 (require 'vbs-repl)
 (require 'htmlize)
+(require 'lorem-ipsum)
 ;(require 'emms-setup)
 ;(require 'ecb)
 

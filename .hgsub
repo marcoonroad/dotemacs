@@ -24,3 +24,4 @@ vendor/vbs-repl           = [git]git://github.com/emacsmirror/vbs-repl.git
 vendor/lua-mode           = [git]git://github.com/immerrr/lua-mode.git
 vendor/org-mode           = [git]git://orgmode.org/org-mode.git
 vendor/htmlize            = [git]git://github.com/emacsmirror/htmlize.git
+vendor/lorem-ipsum        = [git]git://github.com/emacsmirror/lorem-ipsum.git
