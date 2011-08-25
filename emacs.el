@@ -98,7 +98,7 @@
 (add-to-list 'auto-mode-alist '("\\.coffee$"      . coffee-mode))
 (add-to-list 'auto-mode-alist '("Cakefile"        . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$"        . css-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js3-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"          . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
