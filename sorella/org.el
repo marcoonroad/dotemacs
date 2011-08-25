@@ -22,7 +22,7 @@
       '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "|" "DONE(d!/!)")
         (sequence "WAITING(w@/!)" "|" "CANCELLED(c@/!)")
         (sequence "PROJECT(P)" "COMPONENT(C)" "|" "COMPLETE")
-        (sequence "ISSUE(i)" "ANALYSED(a!)" "|" "FIXED(f!/!)")))
+        (sequence "ISSUE(i)" "ANALYSED(a!)" "|" "FIXED(f!/!)" "WONT-FIX(W!/!")))
 
 ;; Don't append notes when using S-arrow to change state
 (setq org-treat-S-cursor-todo-selection-as-state-change nil)
@@ -31,7 +31,8 @@
 (setq org-todo-state-tags-triggers
       '(("CANCELLED" ("CANCELLED" . t))
         ("WAITING"   ("WAITING"   . t))
-        ("ISSUE"     ("WAITING"))
+        ("WONT-FIX"  ("CANCELLED" . t))
+        ("ISSUE"     ("WAITING") ("CANCELLED"))
         ("NEXT"      ("WAITING"))
         ("TODO"      ("WAITING") ("CANCELLED"))
         ("STARTED"   ("WAITING"))
@@ -106,9 +107,11 @@
           (tags "REFILE"
                 ((org-agenda-overriding-header "Tasks to Refile")))
 
-          (tags-todo "-CANCELLED/!"
-                     ((org-agenda-overriding-header "Stuck Projects")
-                      (org-tags-match-list-sublevels 'indented)))
+          (tags-todo "/!ISSUE|ANALYSED"
+                     ((org-agenda-overriding-header "Pending issues")
+                      (org-agenda-tags-match-list-sublevels t)
+                      (org-agenda-sorting-strategy
+                       '(priority-down effort-up category-keep))))
 
           (tags-todo "-WAITING-CANCELLED/!NEXT|STARTED"
                      ((org-agenda-overriding-header "Active tasks")
@@ -118,16 +121,23 @@
                       (org-agenda-sorting-strategy
                        '(todo-state-down effort-up category-keep))))
 
+          (tags-todo "WAITING-CANCELLED"
+                     ((org-agenda-overriding-header "Stuck tasks")))
+
           (tags-todo "/!PROJECT|COMPONENT"
                      ((org-agenda-overriding-header "Projects")
                       (org-tags-match-list-sublevels 'indented)
                       (org-agenda-todo-ignore-scheduled 'future)
                       (org-agenda-todo-ignore-deadlines 'future)
+                      (org-tags-match-list-sublevels t)
                       (org-agenda-sorting-strategy
                        '(category-keep))))
 
-          (tags-todo "-WAITING"
-                     ((org-agenda-overriding-header "Stuck tasks"))))
+          (tags-todo "-CANCELLED/TODO"
+                     ((org-agenda-overriding-header "Future tasks")
+                      (org-agenda-match-list-sublevels t)
+                      (org-agenda-sorting-strategy
+                       '(todo-state-up effort-up category-keep)))))
          nil)))
 
 
@@ -165,10 +175,19 @@
 
 
 ;; ----------------------------------------------------------------------------
+;; Babel
+;; ----------------------------------------------------------------------------
+(setq org-plantuml-jar-path "~/bin/plantuml/plantuml.jar")
+
+(add-hook 'org-babel-after-execute-hook 'org-display-inline-images
+                                        'append)
+
+
+;; ----------------------------------------------------------------------------
 ;; Org-mode hooks
 ;; ----------------------------------------------------------------------------
 (add-hook 'org-mode-hook
           (lambda()
-            (make-variable-buffer-local 'yas/trigger-key)
+            (make-local-variable 'yas/trigger-key)
             (org-set-local 'yas/trigger-key [tab])
             (define-key yas/keymap [tab] 'yas/next-field-group)))
