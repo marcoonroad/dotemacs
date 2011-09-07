@@ -6,6 +6,7 @@
 (load "candy-chain-theme")
 (load "sorella/spelling")
 (load "sorella/vc")
+(load "sorella/org-projects")
 
 ;; Utilities/minor modes
 (load "sorella/whitespace")
