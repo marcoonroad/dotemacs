@@ -45,6 +45,7 @@
 ;; Shows entities as UTF-8 characters
 (setq org-pretty-entities t)
 
+
 
 ;; ----------------------------------------------------------------------------
 ;; Capture
@@ -181,13 +182,3 @@
 
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images
                                         'append)
-
-
-;; ----------------------------------------------------------------------------
-;; Org-mode hooks
-;; ----------------------------------------------------------------------------
-(add-hook 'org-mode-hook
-          (lambda()
-            (make-local-variable 'yas/trigger-key)
-            (org-set-local 'yas/trigger-key [tab])
-            (define-key yas/keymap [tab] 'yas/next-field-group)))
