@@ -163,7 +163,7 @@
 (defun builder-download-stuff ()
   (builder-print-header "-- Getting stuff from the interwebz...")
   (with-temp-buffer
-    (find-file-literally ".hgsub")
+    (find-file-literally "VENDOR-REPOS")
     (goto-char (point-min))
     (while (re-search-forward "\\(.+?\\) *= *\\[\\(.+?\\)\\]\\(.+\\)" nil t)
       (let ((dir (match-string 1))
