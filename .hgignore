@@ -43,3 +43,4 @@ vendor/lua-mode
 vendor/org-mode
 vendor/htmlize
 vendor/lorem-ipsum
+vendor/gist.el

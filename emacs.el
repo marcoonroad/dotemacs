@@ -22,6 +22,7 @@
             "edje"
             "elib"
             "emms/lisp"
+            "gist.el"
             "jade-mode"
             "jdee/lisp"
             "js2-mode"
@@ -69,6 +70,7 @@
 (require 'vbs-repl)
 (require 'htmlize)
 (require 'lorem-ipsum)
+(require 'gist)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
