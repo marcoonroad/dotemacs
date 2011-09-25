@@ -18,6 +18,7 @@
             "clojure-mode"
             "coffee-mode"
             "color-theme"
+            "deft"
             "ecb"
             "edje"
             "elib"
@@ -71,6 +72,7 @@
 (require 'htmlize)
 (require 'lorem-ipsum)
 (require 'gist)
+(require 'deft)
 ;(require 'emms-setup)
 ;(require 'ecb)
 

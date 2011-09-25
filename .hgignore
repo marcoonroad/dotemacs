@@ -44,3 +44,4 @@ vendor/org-mode
 vendor/htmlize
 vendor/lorem-ipsum
 vendor/gist.el
+vendor/deft
