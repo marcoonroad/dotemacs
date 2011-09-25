@@ -34,6 +34,7 @@
             "lua-mode"
             "markdown-mode"
             "parfait"
+            "perspective-el"
             "pymacs"
             "rainbow"
             "rainbow-delimiters"
@@ -73,6 +74,7 @@
 (require 'lorem-ipsum)
 (require 'gist)
 (require 'deft)
+(require 'perspective)
 ;(require 'emms-setup)
 ;(require 'ecb)
 

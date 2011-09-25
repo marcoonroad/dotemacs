@@ -27,3 +27,4 @@ vendor/htmlize            = [git]git://github.com/emacsmirror/htmlize.git
 vendor/lorem-ipsum        = [git]git://github.com/emacsmirror/lorem-ipsum.git
 vendor/gist.el            = [git]git://github.com/mhayashi1120/gist.el.git
 vendor/deft               = [git]git://jblevins.org/git/deft.git
+vendor/perspective-el = [git]git://github.com/nex3/perspective-el.git

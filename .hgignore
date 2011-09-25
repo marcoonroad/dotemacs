@@ -45,3 +45,4 @@ vendor/htmlize
 vendor/lorem-ipsum
 vendor/gist.el
 vendor/deft
+vendor/perspective-el
