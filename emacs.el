@@ -33,6 +33,7 @@
             "lorem-ipsum"
             "lua-mode"
             "markdown-mode"
+            "org-mode/lisp"
             "parfait"
             "perspective-el"
             "pymacs"
