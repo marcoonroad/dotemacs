@@ -76,6 +76,7 @@
 (require 'gist)
 (require 'deft)
 (require 'perspective)
+(require 'sws-mode)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
