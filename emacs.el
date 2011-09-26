@@ -18,10 +18,12 @@
             "clojure-mode"
             "coffee-mode"
             "color-theme"
+            "deft"
             "ecb"
             "edje"
             "elib"
             "emms/lisp"
+            "gist.el"
             "jade-mode"
             "jdee/lisp"
             "js2-mode"
@@ -32,6 +34,7 @@
             "lua-mode"
             "markdown-mode"
             "parfait"
+            "perspective-el"
             "pymacs"
             "rainbow"
             "rainbow-delimiters"
@@ -69,6 +72,9 @@
 (require 'vbs-repl)
 (require 'htmlize)
 (require 'lorem-ipsum)
+(require 'gist)
+(require 'deft)
+(require 'perspective)
 ;(require 'emms-setup)
 ;(require 'ecb)
 

@@ -122,7 +122,7 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key "\C-xw" 'window-resize)
 
 ;; Align regexp
-(global-set-key (kbd "C-;") 'align-regexp)
+(global-set-key "\C-cr" 'align-regexp)
 
 ;; Moving between windows
 (global-set-key (kbd "<M-left>")  'windmove-left)

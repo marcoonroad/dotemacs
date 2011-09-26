@@ -179,6 +179,23 @@
 ;; Babel
 ;; ----------------------------------------------------------------------------
 (setq org-plantuml-jar-path "~/bin/plantuml/plantuml.jar")
+(setq org-ditaa-jar-path "/usr/bin/ditaa")
 
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images
                                         'append)
+
+(org-babel-do-load-languages
+ (quote org-babel-load-languages)
+ (quote ((emacs-lisp . t)
+         (dot . t)
+         (ditaa . t)
+         (R . t)
+         (python . t)
+         (ruby . t)
+         (gnuplot . t)
+         (clojure . t)
+         (sh . t)
+         (ledger . t)
+         (org . t)
+         (plantuml . t)
+         (latex . t))))

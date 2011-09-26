@@ -13,8 +13,10 @@
 ;(load "sorella/smex")
 (load "sorella/parfait")
 (load "sorella/vline")
+(load "sorella/deft")
+(load "sorella/perspective")
 
-;; Major theme customizations
+;; Major mode customizations
 (load "sorella/c")
 (load "sorella/coffee")
 (load "sorella/html")
