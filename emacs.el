@@ -14,6 +14,7 @@
 (vendor-add "ahg"
             "anything"
             "batch-mode"
+            "bnf"
             "candy-chain"
             "clojure-mode"
             "coffee-mode"
@@ -92,6 +93,7 @@
 (autoload 'edje-mode      "edje-mode"      nil t)
 (autoload 'zencoding-mode "zencoding-mode" nil t)
 (autoload 'lua-mode       "lua-mode"       nil t)
+(autoload 'bnf-mode       "bnf-mode"       nil t)
 ;(autoload 'jde-mode       "jde-mode"       nil t)
 
 ;; Pymacs stuff
