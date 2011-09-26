@@ -181,9 +181,6 @@
 (setq org-plantuml-jar-path "~/bin/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/bin/ditaa")
 
-(add-hook 'org-babel-after-execute-hook 'org-display-inline-images
-                                        'append)
-
 (org-babel-do-load-languages
  (quote org-babel-load-languages)
  (quote ((emacs-lisp . t)
@@ -199,3 +196,17 @@
          (org . t)
          (plantuml . t)
          (latex . t))))
+
+
+;; ----------------------------------------------------------------------------
+;; Org-mode hooks
+;; ----------------------------------------------------------------------------
+(add-hook 'org-mode-hook
+          (lambda()
+            (local-set-key "\C-cy" 'yas/expand)
+            (local-set-key "\C-cn" 'yas/next-field-or-maybe-expand)))
+
+(add-hook 'before-save-hook 'org-update-all-dblocks)
+(add-hook 'org-export-preprocess-hook 'org-update-all-dblocks)
+(add-hook 'org-babel-after-execute-hook 'org-display-inline-images
+                                        'append)
