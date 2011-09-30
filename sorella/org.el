@@ -22,7 +22,7 @@
       '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "|" "DONE(d!/!)")
         (sequence "WAITING(w@/!)" "|" "CANCELLED(c@/!)")
         (sequence "PROJECT(P)" "COMPONENT(C)" "|" "COMPLETE")
-        (sequence "ISSUE(i)" "ANALYSED(a!)" "|" "FIXED(f!/!)" "WONT-FIX(W!/!")))
+        (sequence "ISSUE(i)" "ANALYSED(a!)" "|" "FIXED(f!/!)" "WONT-FIX(W!/!)")))
 
 ;; Don't append notes when using S-arrow to change state
 (setq org-treat-S-cursor-todo-selection-as-state-change nil)
