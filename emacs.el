@@ -35,6 +35,7 @@
             "lua-mode"
             "markdown-mode"
             "org-mode/lisp"
+            "org-mode/contrib/lisp"
             "parfait"
             "perspective-el"
             "pymacs"
