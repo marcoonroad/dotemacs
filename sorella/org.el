@@ -180,22 +180,24 @@
 ;; ----------------------------------------------------------------------------
 (setq org-plantuml-jar-path "~/bin/plantuml/plantuml.jar")
 (setq org-ditaa-jar-path "/usr/bin/ditaa")
+(setq org-confirm-babel-evaluate (lambda (lang body)
+                                   (not (string= lang "ditaa"))))
 
 (org-babel-do-load-languages
  (quote org-babel-load-languages)
  (quote ((emacs-lisp . t)
-         (dot . t)
-         (ditaa . t)
-         (R . t)
-         (python . t)
-         (ruby . t)
-         (gnuplot . t)
-         (clojure . t)
-         (sh . t)
-         (ledger . t)
-         (org . t)
-         (plantuml . t)
-         (latex . t))))
+         (dot        . t)
+         (ditaa      . t)
+         (R          . t)
+         (python     . t)
+         (ruby       . t)
+         (gnuplot    . t)
+         (clojure    . t)
+         (sh         . t)
+         (ledger     . t)
+         (org        . t)
+         (plantuml   . t)
+         (latex      . t))))
 
 
 ;; ----------------------------------------------------------------------------
