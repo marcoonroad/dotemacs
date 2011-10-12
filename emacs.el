@@ -23,6 +23,7 @@
             "ecb"
             "edje"
             "elib"
+            "emacs-color-theme-solarized"
             "emms/lisp"
             "gist.el"
             "jade-mode"
