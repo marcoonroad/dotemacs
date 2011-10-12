@@ -21,8 +21,9 @@
   (setq parfait-symtable '())
 
   (parfait-add-symbols
-   '(("\\<this\\." . "@")
-     ("\\>_\\<" . "-")
+   '(("\\<this\\."          . "@")
+     ("\\>_\\<"             . "-")
+     ("p("                  . "?(")
      ("[{};]+[[:blank:]]*$" . "	\\")))
   (c-toggle-electric-state -1)
   (parfait-mode             t))
