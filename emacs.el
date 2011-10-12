@@ -80,6 +80,7 @@
 (require 'deft)
 (require 'perspective)
 (require 'sws-mode)
+(require 'color-theme-solarized)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
@@ -128,4 +129,6 @@
 
 ;; --[ custom stuff ]----------------------------------------------------------
 (quietly-read-abbrev-file "~/.emacs.d/.abbrevs")
+(load "utils/all")
 (load "sorella/profile")
+
