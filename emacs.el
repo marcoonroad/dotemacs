@@ -14,6 +14,7 @@
 (vendor-add "ahg"
             "anything"
             "batch-mode"
+            "bnf"
             "candy-chain"
             "clojure-mode"
             "coffee-mode"
@@ -33,6 +34,8 @@
             "lorem-ipsum"
             "lua-mode"
             "markdown-mode"
+            "org-mode/lisp"
+            "org-mode/contrib/lisp"
             "parfait"
             "perspective-el"
             "pymacs"
@@ -75,6 +78,7 @@
 (require 'gist)
 (require 'deft)
 (require 'perspective)
+(require 'sws-mode)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
@@ -90,6 +94,7 @@
 (autoload 'edje-mode      "edje-mode"      nil t)
 (autoload 'zencoding-mode "zencoding-mode" nil t)
 (autoload 'lua-mode       "lua-mode"       nil t)
+(autoload 'bnf-mode       "bnf-mode"       nil t)
 ;(autoload 'jde-mode       "jde-mode"       nil t)
 
 ;; Pymacs stuff
