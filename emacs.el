@@ -45,6 +45,7 @@
             "renpy"
             "slime"
             "smex"
+            "todochiku"
             "tumble"
             "twmode"
             "visual-basic"
@@ -81,6 +82,7 @@
 (require 'perspective)
 (require 'sws-mode)
 (require 'color-theme-solarized)
+(require 'todochiku)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
