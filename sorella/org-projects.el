@@ -11,8 +11,9 @@
          :recursive t
          :publishing-function org-publish-org-to-html
          :headline-levels 6
+         :section-numbers nil
          :html-extension "html"
-         :table-of-contents 6
+         :table-of-contents t
          :body-only t)
 
         ("blog-static"

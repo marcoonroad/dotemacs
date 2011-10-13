@@ -53,7 +53,7 @@
 ;; Kinda stolen from this part of the EmacsWiki:
 ;; > http://www.emacswiki.org/emacs/WindowResize
 ;; ----------------------------------------------------------------------------
-(defun window-resize ()
+(defun sa/window-resize ()
   "interactively resizes the window"  
   (interactive)
   (while (progn
@@ -63,19 +63,19 @@
               ((eq key 'up)    (enlarge-window  1) t)
               ((eq key 'down)  (enlarge-window -1) t)
               ;; resize horizontally
-              ((eq key 'left)  (enlarge-window-horizontally -1) t)
-              ((eq key 'right) (enlarge-window-horizontally  1) t)
+              ((eq key 'left)  (enlarge-window -1 t) t)
+              ((eq key 'right) (enlarge-window  1 t) t)
               ;; breaks from the loop otherwise
               (t nil))))))
 
 ;; Inserts current date
-(defun current-date ()
+(defun sa/current-date ()
   (interactive)
   (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
 
 ;; Recompiles an emacs lisp file whenever we save (if a compiled version
 ;; already exists, that is)
-(defun auto-byte-recompile ()
+(defun sa/auto-byte-recompile ()
 "If the current buffer is in emacs-lisp-mode and there already exists an `.elc'
 file corresponding to the current buffer file, then recompile the file."
   (interactive)
@@ -83,7 +83,7 @@ file corresponding to the current buffer file, then recompile the file."
              (file-exists-p (byte-compile-dest-file buffer-file-name)))
     (byte-compile-file buffer-file-name)))
 
-(add-hook 'after-save-hook 'auto-byte-recompile)
+(add-hook 'after-save-hook 'sa/auto-byte-recompile)
 
 
 ;; ----------------------------------------------------------------------------
@@ -119,10 +119,11 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key "\C-ca" 'anything)
 
 ;; Resizes the window
-(global-set-key "\C-xw" 'window-resize)
+(global-set-key "\C-xw" 'sa/window-resize)
 
 ;; Align regexp
-(global-set-key "\C-cr" 'align-regexp)
+(global-set-key "\C-cjr" 'align-regexp)
+(global-set-key "\C-cjt" 'align-current-at-right)
 
 ;; Moving between windows
 (global-set-key (kbd "<M-left>")  'windmove-left)

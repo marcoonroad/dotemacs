@@ -46,3 +46,4 @@ vendor/lorem-ipsum
 vendor/gist.el
 vendor/deft
 vendor/perspective-el
+vendor/emacs-color-theme-solarized

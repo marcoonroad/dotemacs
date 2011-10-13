@@ -5,6 +5,7 @@
 	("rquo" "‘¡±" nil 0)
 	("emd"  "•¡·" nil 0)
 	("end"  "•¡¹" nil 0)
+    ("sep" "œôóã" nil 0)
 
     ; Mathematical symbols
     ("inequal" "‘¡Ù" nil 0)
@@ -13,6 +14,8 @@
     ("lteq" "‘¡Ü" nil 0)
     ("gteq" "‘¡Ý" nil 0)
     ("proportional" "‘¡Ø" nil 0)
+    ("right" "‘¡ú" nil 0)
+    ("left" "‘¡û" nil 0)
 	("fatarrow" "’¢Í" nil 0)
     ("map" "œô÷¦" nil 0)
 ))

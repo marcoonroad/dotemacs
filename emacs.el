@@ -7,52 +7,54 @@
 ;; ----------------------------------------------------------------------------
 ;; Adds vendor modules so they're also reachable by Emacs
 ;; ----------------------------------------------------------------------------
-(defun vendor-add (&rest modules)
+(defun sa/vendor-add (&rest modules)
   (dolist (module modules)
     (add-to-list 'load-path (concat "~/.emacs.d/vendor/" module))))
     
-(vendor-add "ahg"
-            "anything"
-            "batch-mode"
-            "bnf"
-            "candy-chain"
-            "clojure-mode"
-            "coffee-mode"
-            "color-theme"
-            "deft"
-            "ecb"
-            "edje"
-            "elib"
-            "emms/lisp"
-            "gist.el"
-            "jade-mode"
-            "jdee/lisp"
-            "js2-mode"
-            "js3-mode"
-            "htmlize"
-            "lambda"
-            "lorem-ipsum"
-            "lua-mode"
-            "markdown-mode"
-            "org-mode/lisp"
-            "org-mode/contrib/lisp"
-            "parfait"
-            "perspective-el"
-            "pymacs"
-            "rainbow"
-            "rainbow-delimiters"
-            "renpy"
-            "slime"
-            "smex"
-            "tumble"
-            "twmode"
-            "visual-basic"
-            "vbs-repl"
-            "vline"
-            "w3m"
-            "whitespace"
-            "yasnippet"
-            "zencoding")
+(sa/vendor-add "ahg"
+               "anything"
+               "batch-mode"
+               "bnf"
+               "candy-chain"
+               "clojure-mode"
+               "coffee-mode"
+               "color-theme"
+               "deft"
+               "ecb"
+               "edje"
+               "elib"
+               "emacs-color-theme-solarized"
+               "emms/lisp"
+               "gist.el"
+               "jade-mode"
+               "jdee/lisp"
+               "js2-mode"
+               "js3-mode"
+               "htmlize"
+               "lambda"
+               "lorem-ipsum"
+               "lua-mode"
+               "markdown-mode"
+               "org-mode/lisp"
+               "org-mode/contrib/lisp"
+               "parfait"
+               "perspective-el"
+               "pymacs"
+               "rainbow"
+               "rainbow-delimiters"
+               "renpy"
+               "slime"
+               "smex"
+               "todochiku"
+               "tumble"
+               "twmode"
+               "visual-basic"
+               "vbs-repl"
+               "vline"
+               "w3m"
+               "whitespace"
+               "yasnippet"
+               "zencoding")
 
 
 ;; --[ load stuff ]------------------------------------------------------------
@@ -79,6 +81,8 @@
 (require 'deft)
 (require 'perspective)
 (require 'sws-mode)
+(require 'color-theme-solarized)
+(require 'todochiku)
 ;(require 'emms-setup)
 ;(require 'ecb)
 
@@ -127,4 +131,6 @@
 
 ;; --[ custom stuff ]----------------------------------------------------------
 (quietly-read-abbrev-file "~/.emacs.d/.abbrevs")
+(load "utils/all")
 (load "sorella/profile")
+

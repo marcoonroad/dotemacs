@@ -82,13 +82,13 @@
 
 
 ;; Removes empty LOGBOOK drawers at clock-out
-(defun s/remove-empty-logbook ()
+(defun sa/remove-empty-logbook ()
   (interactive)
   (save-excursion
     (beginning-of-line 0)
     (org-remove-empty-drawer-at "LOGBOOK" (point))))
 
-(add-hook 'org-clock-out-hook 's/remove-empty-logbook)
+(add-hook 'org-clock-out-hook 'sa/remove-empty-logbook)
 
 
 ;; ----------------------------------------------------------------------------

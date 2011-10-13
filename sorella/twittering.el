@@ -6,12 +6,16 @@
 
 Requires the notify-send binary to be installed."
   (let ((n twittering-new-tweets-count))
-    (start-process "twittering-notify" nil "notify-send"
-                   "-i" twittering-emacs-icon
-                   (format "twmode — %s" twittering-new-tweets-spec)
-                   (format "You have %d new tweet%s"
-                           (n (if (> n 1) "s" ""))))))
-
+    (if (> n 3)
+        (todochiku-message (format "twmode — %s" twittering-new-tweets-spec)
+                           (format "You have %d new tweets" n)
+                           (todochiku-icon 'social))
+      (dolist (tweet twittering-new-tweets-statuses)
+        (todochiku-message (format "twmode — %s" (cdr (assoc 'user-screen-name tweet)))
+                           (cdr (assoc 'text tweet))
+                           (todochiku-icon 'social))))))
+        
+(add-hook 'twittering-new-tweets-hook 'twittering-notify-new-tweets)
 
 ;; ----------------------------------------------------------------------------
 ;; Configurations for Twittering-mode
@@ -50,3 +54,5 @@ Requires the notify-send binary to be installed."
             (local-set-key "R"     'twittering-replies-timeline)
             (local-set-key "U"     'twittering-user-timeline)
             (local-set-key "\C-cr" 'twittering-retweet)))
+
+(global-set-key "\C-ct" 'twittering-update-status-interactive)
