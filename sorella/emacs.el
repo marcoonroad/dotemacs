@@ -96,8 +96,8 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key (kbd "<S-insert>") 'clipboard-yank)
 
 ;; Saner keys for working with bookmarks
-(global-set-key (kbd "<f9>")  'bookmark-jump)
-(global-set-key (kbd "<f10>") 'bookmark-set)
+(global-set-key (kbd "<f5>")  'bookmark-jump)
+(global-set-key (kbd "<f6>") 'bookmark-set)
 
 ;; Abbreviations
 (global-set-key (kbd "C-/") 'expand-abbrev)
@@ -132,8 +132,8 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key (kbd "<M-down>")  'windmove-down)
 
 ;; Scrolling
-(global-set-key (kbd "C-,") (lambda() (interactive) (scroll-up   1)))
-(global-set-key (kbd "C-.") (lambda() (interactive) (scroll-down 1)))
+(global-set-key (kbd "C-<") (lambda() (interactive) (scroll-up   1)))
+(global-set-key (kbd "C->") (lambda() (interactive) (scroll-down 1)))
 
 ;; Sane stuff for finishing edition on a server stuff
 (add-hook 'server-switch-hook

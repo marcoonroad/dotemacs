@@ -38,3 +38,6 @@
             (local-set-key "\C-cjc" 'js2-mode-toggle-//-comment)
             (local-set-key "\C-cjt" 'js2-mode-toggle-element)
             (local-set-key (kbd "<backtab>") #'js2-indent-bounce-backwards)))
+
+(font-lock-add-keywords 'js2-mode
+ '(("\\[\\|\\]\\|[{}(),.|&;\\?]" . font-lock-preprocessor-face)))

@@ -38,5 +38,5 @@
 
 
 ;; Silly stuff to allow me testing the changes I do without too much hassle
-(global-set-key "\C-c\C-td" 'color-theme-candy-chain)
-(global-set-key "\C-c\C-tl" 'color-theme-solarized-light)
+(global-set-key (kbd "<f12> d") 'color-theme-candy-chain)
+(global-set-key (kbd "<f12> l") 'color-theme-solarized-light)
