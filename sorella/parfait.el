@@ -4,15 +4,18 @@
   (make-local-variable 'parfait-symtable)
   (setq parfait-symtable '())
   (parfait-add-symbols
-   '(("\\<this\\."     . "@")
-     ("\\<function\\>" . "λ")
-     ("\\>_\\<"        . "-")
-     ("<="             . "≤ ")
-     (">="             . "≥ ")
-     ("&&"             . "∧ ")
-     ("||"             . "∨ ")))
+   '(("\\<this\\."                . "@")    ; thisObject property access
+     (") *{ *return +function *(" . ") ∘ ") ; higher-order functions
+     ("\\<function\\>"            . "λ")    ; function keyword
+     ("p[[:blank:]]*("            . "?(")   ; predicate functions
+     ("\\>_\\<"                   . "-")    ; identifier word separator
+     ("<="                        . "≤ ")
+     (">="                        . "≥ ")
+     ("&&"                        . "∧ ")
+     ("||"                        . "∨ ")))
   (parfait-mode t))
 
+;; Used for Dart
 (defun parfait-java ()
   (interactive)
   (make-local-variable 'parfait-symtable)
@@ -21,10 +24,10 @@
   (setq parfait-symtable '())
 
   (parfait-add-symbols
-   '(("\\<this\\."          . "@")
-     ("\\>_\\<"             . "-")
-     ("p("                  . "?(")
-     ("[{};]+[[:blank:]]*$" . "	\\")))
+   '(("\\<this\\."                                   . "@")
+     ("\\>_\\<"                                      . "-")
+     ("p[[:blank:]]*("                               . "?(")
+     ("[{};]+[[:blank:]]*\\([{};]+[[:blank:]]*\\)?$" . "	↲")))
   (c-toggle-electric-state -1)
   (parfait-mode             t))
 
