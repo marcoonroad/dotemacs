@@ -46,9 +46,9 @@
   (builder-print (format "› %s" message) "green"))
 
 (defun builder-padded (text offset)
-  (concat text (make-string (+ (- builder-column-size
-                                  (length text))
-                               offset)
+  (concat text (make-string (max 0 (+ (- builder-column-size
+                                         (length text))
+                                      offset))
                             ? )))
 
 (defun builder-dep-status (text status &optional colour)
