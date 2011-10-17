@@ -9,10 +9,20 @@
           (when initialize ,@body)
           (setq persp-last current-perspective)))
 
+     
+     ;;; Custom perspectives
+     (defun sa/persp-org ()
+       (interactive)
+       (sa/custom-persp "@org"
+                        (find-file (car org-agenda-files))    
+                        (org-agenda-list)))
+
 
      ;;; Initialisation
      (persp-mode)
 
-     ;;; Useful keybindings
+     ;;; Keybindings
      (global-set-key "\C-xp" 'persp-switch)
+
+     (global-set-key "\C-cpo" 'sa/persp-org)
      ))

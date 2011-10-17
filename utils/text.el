@@ -1,4 +1,14 @@
-;;; Routines for dealing with pure text
+;; Utilities for text editing
+
+(defun sorella/dotted-tabs ()
+  (interactive)
+  (save-excursion
+    (goto-char (point-min))
+    (while (re-search-forward " \\( +\\) " nil t)
+      (replace-match (concat " "
+                             (make-string (length (match-string 1)) ?.)
+                             " ")))))
+
 
 
 (defun sa/align-region-at-right ()
@@ -16,6 +26,7 @@ at the first whitespace after an identifier."
   (interactive)
   (save-excursion
     (mark-paragraph)
+<<<<<<< local
     (sa/align-region-at-right)))
 
 
@@ -24,3 +35,5 @@ at the first whitespace after an identifier."
   (interactive (list (eval-last-sexp nil)))
   (kill-sexp -1)
   (insert (format "%S" value)))
+=======
+    (align-region-at-right)))>>>>>>> other

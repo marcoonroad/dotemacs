@@ -32,6 +32,8 @@
 (load "sorella/visual-basic")
 ;(load "sorella/emms")
 
+;; Private and system-specific configuration
+(load "sorella/private/loader" 'noerror 'nomessage)
 
 ;; Applies the colour theme
 (color-theme-candy-chain)
