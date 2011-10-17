@@ -90,6 +90,8 @@ file corresponding to the current buffer file, then recompile the file."
 ;; Keyboard shortcuts
 ;; ----------------------------------------------------------------------------
 
+(global-set-key "\C-cl" 'font-lock-fontify-buffer)
+
 ;; Allows copying to the system clipboard
 (global-set-key (kbd "<S-delete>") 'clipboard-kill-region)
 (global-set-key (kbd "<C-insert>") 'clipboard-kill-ring-save)
@@ -99,9 +101,9 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key (kbd "<f5>")  'bookmark-jump)
 (global-set-key (kbd "<f6>") 'bookmark-set)
 
-;; Abbreviations
+;; Expansions
 (global-set-key (kbd "C-/") 'expand-abbrev)
-(global-set-key "\C-cl" 'font-lock-fontify-buffer)
+(global-set-key (kbd "<f9>") 'sa/eval-and-replace)
 
 ;; Some minor and very useful modes
 (global-set-key "\C-cmf" 'auto-fill-mode)
@@ -123,13 +125,13 @@ file corresponding to the current buffer file, then recompile the file."
 
 ;; Align regexp
 (global-set-key "\C-cjr" 'align-regexp)
-(global-set-key "\C-cjt" 'align-current-at-right)
+(global-set-key "\C-cjt" 'sa/align-current-at-right)
 
 ;; Moving between windows
-(global-set-key (kbd "<M-left>")  'windmove-left)
-(global-set-key (kbd "<M-right>") 'windmove-right)
-(global-set-key (kbd "<M-up>")    'windmove-up)
-(global-set-key (kbd "<M-down>")  'windmove-down)
+(global-set-key (kbd "<C-M-left>")  'windmove-left)
+(global-set-key (kbd "<C-M-right>") 'windmove-right)
+(global-set-key (kbd "<C-M-up>")    'windmove-up)
+(global-set-key (kbd "<C-M-down>")  'windmove-down)
 
 ;; Scrolling
 (global-set-key (kbd "C-<") (lambda() (interactive) (scroll-up   1)))

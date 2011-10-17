@@ -2,4 +2,4 @@
 (setq deft-directory "~/org/deft")
 (setq deft-text-mode 'org-mode)
 
-(global-set-key (kbd "<f9>") 'deft)
+(global-set-key (kbd "C-c \\ n") 'deft)
