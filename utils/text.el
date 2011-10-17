@@ -1,6 +1,6 @@
 ;; Utilities for text editing
 
-(defun sorella/dotted-tabs ()
+(defun sa/dotted-tabs ()
   (interactive)
   (save-excursion
     (goto-char (point-min))
@@ -8,7 +8,6 @@
       (replace-match (concat " "
                              (make-string (length (match-string 1)) ?.)
                              " ")))))
-
 
 
 (defun sa/align-region-at-right ()
@@ -21,12 +20,12 @@ at the first whitespace after an identifier."
                 "^[[:blank:]]*\\([[:alnum:],<>/=&!\\-\\?\\+]+\\)[[:blank:]]*\\(\\s-.+\\)"
                 -1 0 nil))
 
+
 (defun sa/align-current-at-right ()
   "Aligns the first column of each line of the current paragraph at right."
   (interactive)
   (save-excursion
     (mark-paragraph)
-<<<<<<< local
     (sa/align-region-at-right)))
 
 
@@ -35,5 +34,3 @@ at the first whitespace after an identifier."
   (interactive (list (eval-last-sexp nil)))
   (kill-sexp -1)
   (insert (format "%S" value)))
-=======
-    (align-region-at-right)))>>>>>>> other
