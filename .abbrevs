@@ -1,4 +1,4 @@
-;;-*-coding: emacs-mule;-*-
+;;-*-coding: emacs-mule; mode:lisp-interaction -*-
 (define-abbrev-table 'global-abbrev-table
   '(("emoprog" "‘£¨ œôøö—«Øœôøö‘£©" nil 0)
 	("lquo" "‘¡°" nil 0)
@@ -18,4 +18,32 @@
     ("left" "‘¡û" nil 0)
 	("fatarrow" "’¢Í" nil 0)
     ("map" "œô÷¦" nil 0)
+
+    ; Greek symbols
+    ("alpha" "†á" nil 0)
+    ("beta" "†â" nil 0)
+    ("psi" "†ø" nil 0)
+    ("delta" "†ä" nil 0)
+    ("epsilon" "†å" nil 0)
+    ("phi" "†ö" nil 0)
+    ("gamma" "†ã" nil 0)
+    ("eta" "†ç" nil 0)
+    ("iota" "†é" nil 0)
+    ("xi" "†î" nil 0)
+    ("kappa" "†ê" nil 0)
+    ("lambda" "†ë" nil 0)
+    ("mu" "†ì" nil 0)
+    ("nu" "†í" nil 0)
+    ("omicron" "†ï" nil 0)
+    ("pi" "†ð" nil 0)
+    ("rho" "†ñ" nil 0)
+    ("sigma" "†ó" nil 0)
+    ("tau" "†ô" nil 0)
+    ("theta" "†è" nil 0)
+    ("omega" "†ù" nil 0)
+    ("fsigma" "†ò" nil 0)
+    ("chi" "†÷" nil 0)
+    ("upsilon" "†õ" nil 0)
+    ("zeta" "†æ" nil 0)
+
 ))

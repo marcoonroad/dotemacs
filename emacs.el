@@ -19,18 +19,21 @@
                "clojure-mode"
                "coffee-mode"
                "color-theme"
+               "dart-mode"
                "deft"
+               "dollphie"
                "ecb"
                "edje"
                "elib"
                "emacs-color-theme-solarized"
                "emms/lisp"
                "gist.el"
+               "htmlize"
+               "haskell-mode"
                "jade-mode"
                "jdee/lisp"
                "js2-mode"
                "js3-mode"
-               "htmlize"
                "lambda"
                "lorem-ipsum"
                "lua-mode"
@@ -83,8 +86,12 @@
 (require 'sws-mode)
 (require 'color-theme-solarized)
 (require 'todochiku)
+(require 'dollphie-mode)
+(require 'dart-mode)
 ;(require 'emms-setup)
 ;(require 'ecb)
+
+(load "haskell-site-file")
 
 
 ;; --[ Autoload ]--------------------------------------------------------------
@@ -113,13 +120,15 @@
 (add-to-list 'auto-mode-alist '("\\.coffee$"      . coffee-mode))
 (add-to-list 'auto-mode-alist '("Cakefile"        . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$"        . css-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js3-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js-mode))
 (add-to-list 'auto-mode-alist '("\\.md$"          . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$"         . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edc$"         . edje-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$"        . jade-mode))
 (add-to-list 'auto-mode-alist '("\\.vbs\\|\\.lss" . vbscript-mode))
 (add-to-list 'auto-mode-alist '("\\.lua$"         . lua-mode))
+(add-to-list 'auto-mode-alist '("\\.hs$"          . haskell-mode))
+(add-to-list 'auto-mode-alist '("\\.dart$"        . dart-mode))
 ;(add-to-list 'auto-mode-alist '("\\.java$"        . jde-mode))
 
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))

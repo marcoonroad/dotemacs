@@ -4,15 +4,37 @@
   (make-local-variable 'parfait-symtable)
   (setq parfait-symtable '())
   (parfait-add-symbols
-   '(("\\<this\\."                . "@")    ; thisObject property access
-     (") *{ *return +function *(" . ") ∘ ") ; higher-order functions
-     ("\\<function\\>"            . "λ")    ; function keyword
-     ("p[[:blank:]]*("            . "?(")   ; predicate functions
-     ("\\>_\\<"                   . "-")    ; identifier word separator
-     ("<="                        . "≤ ")
-     (">="                        . "≥ ")
-     ("&&"                        . "∧ ")
-     ("||"                        . "∨ ")))
+   '(;; Keywords
+     ("\\<function\\>" . "λ")
+     ("\\<return\\>" . "←")
+     ("\\.prototype\\." . "#")
+     ("this\\." . "@")
+
+     ;; Identifier readability
+     ("\\>_\\<" . "-")
+     ("_p\\>" . "?")
+     ("\\<n_\\([[:alnum:]_$]+\\)" . (lambda()
+                                      (concat (match-string 1) "!")))
+     ("_\\(_+\\)\\([[:alnum:]_$]+\\)" . (lambda()
+                                          (let ((s (make-string (string-width (match-string 1)) ?')))
+                                            (concat (match-string 2) s))))
+
+     ;; Clutter-less blocks
+     ("{" . "≡")
+     ("){" . ") ≡")
+     ("}" . "")
+     ("{ *}" . "::")
+
+     ;; Operators
+     (" :\\(     ?\\)?" . " :")
+     ("&&\\(     ?\\)?" . "⋀")
+     ("||\\(     ?\\)?" . "⋁")
+
+     ;; Operators
+     ("\\.clone(" . " ⋖ ")  ;; Allen's proposal :3
+     ("<=" . "≤")
+     (">=" . "≥")
+    ))
   (parfait-mode t))
 
 ;; Used for Dart
