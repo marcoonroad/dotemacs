@@ -48,6 +48,7 @@
                "renpy"
                "slime"
                "smex"
+               "swank-js"
                "todochiku"
                "tumble"
                "twmode"

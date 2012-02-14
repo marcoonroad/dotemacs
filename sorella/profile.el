@@ -30,6 +30,7 @@
 (load "sorella/org")
 (load "sorella/markdown")
 (load "sorella/visual-basic")
+(load "sorella/slime")
 ;(load "sorella/emms")
 
 ;; Private and system-specific configuration
