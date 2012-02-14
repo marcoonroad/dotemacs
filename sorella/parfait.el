@@ -7,19 +7,31 @@
    '(;; Keywords
      ("\\<function\\>" . "λ")
      ("\\<return\\>" . "←")
+     ("\\.prototype\\." . "#")
      ("this\\." . "@")
 
      ;; Identifier readability
      ("\\>_\\<" . "-")
+     ("_p\\>" . "?")
+     ("\\<n_\\([[:alnum:]_$]+\\)" . (lambda()
+                                      (concat (match-string 1) "!")))
+     ("_\\(_+\\)\\([[:alnum:]_$]+\\)" . (lambda()
+                                          (let ((s (make-string (string-width (match-string 1)) ?')))
+                                            (concat (match-string 2) s))))
 
+     ;; Clutter-less blocks
+     ("{" . "≡")
+     ("){" . ") ≡")
+     ("}" . "")
+     ("{ *}" . "::")
 
      ;; Operators
-     (" :\\(     \\)?" . " :")
-     ("&&\\(    \\)?" . "⋀")
-     ("||\\(    \\)?" . "⋁")
+     (" :\\(     ?\\)?" . " :")
+     ("&&\\(     ?\\)?" . "⋀")
+     ("||\\(     ?\\)?" . "⋁")
 
      ;; Operators
-     ("\\.derive" . " <| ")  ;; Allen's proposal :3
+     ("\\.clone(" . " ⋖ ")  ;; Allen's proposal :3
      ("<=" . "≤")
      (">=" . "≥")
     ))
