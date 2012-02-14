@@ -1,0 +1,7 @@
+#!/bin/bash
+repo=`basename $1 .git`
+cd vendor
+git clone $1
+cd ..
+echo "vendor/$repo = [git]$1" >> VENDOR-REPOS
+echo "vendor/$repo" >> .hgignore
