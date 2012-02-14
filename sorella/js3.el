@@ -24,7 +24,7 @@
 (setq js3-highlight-external-variables t)
 
 ;; I find 4-space indentation the ideal.
-(setq-default js3-indent-level 4)
+(setq-default js3-indent-level 2)
 
 
 ;; ----------------------------------------------------------------------------
