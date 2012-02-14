@@ -7,9 +7,10 @@ session*
 ignore
 pkg
 *.elc
-.git*
 *.gpg
+.git*
 .svn
+_darcs
 emms/scores
 archives
 bookmarks
@@ -49,3 +50,4 @@ vendor/perspective-el
 vendor/emacs-color-theme-solarized
 sorella/private/
 *.orig
+vendor/swank-js
