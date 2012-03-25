@@ -19,6 +19,7 @@ org-clock-save.el
 elpa
 abbrev_defs
 anything-c-adaptive-history
+url/
 
 ## Subrepositories
 vendor/anything
