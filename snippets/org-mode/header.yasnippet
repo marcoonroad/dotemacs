@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Header
+# --
+#+STARTUP: indent ${1:content}
+
+#+TITLE: ${2:`(file-name-nondirectory (buffer-file-name))`}
+#+AUTHOR: Quildreen Motta
+${3:$(unless (string= "" text) "#+DESCRIPTION: ")}${3:What this file is about?}
+${4:$(unless (string= "" text) "#+CATEGORY: ")}${4:None}
+#+LANGUAGE: en_GB
+
+#+OPTIONS: H:3 num:t toc:t
+#+OPTIONS: ^:{} f:nil <:nil d:nil
+#+OPTIONS: tasks:todo todo:t
+
+
+$0

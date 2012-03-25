@@ -1,0 +1,56 @@
+# -*- mode: snippet -*-
+# name: index
+# expand-env: ((yas/wrap-around-region 'nil))
+# --
+${1:Library name} —at a glance—
+${1:$(make-string (+ 14 (string-width text)) ?=)}
+
+${2:Quick Introduction}
+
+
+Installing
+''''''''''
+
+${3:Installation procedures}
+
+
+Platform Support
+''''''''''''''''
+
+${4:Platforms supported by the project}
+
+
+Learning Boo
+''''''''''''
+
+.. toctree::
+   :maxdepth: ${5:Toc Depth}
+   
+   ${6:Toc Entries}
+
+
+Support and Development
+'''''''''''''''''''''''
+
+${7:Support and development information}
+
+
+Licence
+'''''''
+
+$1 is licensed under the delicious and premissive `MIT`_ licence. You
+can happily copy, share, modify, sell or whatever — refer to the actual
+licence text for \`\`less\`\` information::
+
+    $ less LICENCE.txt
+
+.. _MIT: https://github.com/${8:username}/$1/raw/master/LICENCE.txt
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

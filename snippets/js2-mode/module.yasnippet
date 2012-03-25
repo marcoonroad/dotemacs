@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: Module
+# --
+
+/// Module $1
+void function (root, require_p, exports_p) {
+
+  
+
+  var ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}
+  if (exports_p) $1 = exports
+  else { var old
+    old = root.$1
+    $1 = root.$1 = {}
+
+    //// Function make_local
+    // Removes the library from the global object
+    //
+    // make-local :: () → $1
+    $1.make_local = function() {
+      root.$1 = old
+      return $1 }}
+
+
+// --
+}
+( this
+, typeof require == 'function'
+, typeof exports != 'undefined'
+)
+// -- `(file-name-nondirectory (buffer-file-name))` ends here --
