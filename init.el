@@ -1,4 +1,7 @@
 ;; Based on Emacs Prelude's prelude-package.el
+(when (string-match-p "^23" emacs-version)
+  (add-to-list 'load-path "~/.emacs.d/vendor/package"))
+
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
