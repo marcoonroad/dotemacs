@@ -8,6 +8,9 @@
 (global-set-key "\C-cot" 'org-clock-in)
 (global-set-key "\C-cor" 'org-capture)
 
+;; org-called-interactively-p isn't defined, so we just fallback
+(defalias 'org-called-interactively-p 'called-interactively-p)
+
 ;; use return to follow links so I need no mouse
 (setq org-return-follows-link t)
 

@@ -13,9 +13,9 @@
 ;; Don't use tabs for indentation.
 (setq-default indent-tabs-mode nil)
 
-;; I like leaving my tabs at 4 spaces-long. It provides good readability and
+;; I like leaving my tabs at 2 spaces-long. It provides good readability and
 ;; doesn't waste all my horizontal space.
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 
 ;; Use <TAB> only for indenting.
 (setq tab-always-indent t)
@@ -98,7 +98,7 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key (kbd "<S-insert>") 'clipboard-yank)
 
 ;; Saner keys for working with bookmarks
-(global-set-key (kbd "<f5>")  'bookmark-jump)
+(global-set-key (kbd "<f5>") 'bookmark-jump)
 (global-set-key (kbd "<f6>") 'bookmark-set)
 
 ;; Expansions
@@ -128,10 +128,10 @@ file corresponding to the current buffer file, then recompile the file."
 (global-set-key "\C-cjt" 'sa/align-current-at-right)
 
 ;; Moving between windows
-(global-set-key (kbd "<C-M-left>")  'windmove-left)
-(global-set-key (kbd "<C-M-right>") 'windmove-right)
-(global-set-key (kbd "<C-M-up>")    'windmove-up)
-(global-set-key (kbd "<C-M-down>")  'windmove-down)
+(global-set-key "\M-j" 'windmove-left)
+(global-set-key "\M-l" 'windmove-right)
+(global-set-key "\M-i" 'windmove-up)
+(global-set-key "\M-k" 'windmove-down)
 
 ;; Scrolling
 (global-set-key (kbd "C-<") (lambda() (interactive) (scroll-up   1)))
