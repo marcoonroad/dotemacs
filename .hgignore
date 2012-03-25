@@ -17,6 +17,8 @@ bookmarks
 org-clock-save.el
 .cache
 elpa
+abbrev_defs
+anything-c-adaptive-history
 
 ## Subrepositories
 vendor/anything
