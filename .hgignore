@@ -15,6 +15,8 @@ emms/scores
 archives
 bookmarks
 org-clock-save.el
+.cache
+elpa
 
 ## Subrepositories
 vendor/anything

@@ -5,12 +5,12 @@
   (setq parfait-symtable '())
   (parfait-add-symbols
    '(;; Keywords
-     ("\\<function\\>" . "λ")
+     ("\\<function\\>" . "λ ")
      ("\\<return\\>" . "←")
      ("this\\." . "@")
 
      ;; Identifier readability
-     ("\\>_\\<" . "-")
+     ("\\>_\\<" . "٠")
 
 
      ;; Operators
@@ -22,8 +22,7 @@
      ("\\.derive" . " <| ")  ;; Allen's proposal :3
      ("<=" . "≤")
      (">=" . "≥")
-    ))
-  (parfait-mode t))
+    )))
 
 ;; Used for Dart
 (defun parfait-java ()
@@ -38,11 +37,10 @@
      ("\\>_\\<"                                      . "-")
      ("p[[:blank:]]*("                               . "?(")
      ("[{};]+[[:blank:]]*\\([{};]+[[:blank:]]*\\)?$" . "	↲")))
-  (c-toggle-electric-state -1)
-  (parfait-mode             t))
-
-(add-hook 'js2-mode-hook        'parfait-javascript)
-(add-hook 'js3-mode-hook        'parfait-javascript)
-(add-hook 'javascript-mode-hook 'parfait-javascript)
-(add-hook 'java-mode-hook       'parfait-java)
+  (c-toggle-electric-state -1))
           
+
+(add-hook 'js3-mode-hook 'parfait-javascript)
+(add-hook 'js2-mode-hook 'parfait-javascript)
+(add-hook 'js-mode-hook  'parfait-javascript)
+(add-hook 'java-mode     'parfait-java)

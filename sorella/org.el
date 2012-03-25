@@ -63,7 +63,14 @@
         ("n" "note" entry (file "~/org/refile.org")
          "* %?	:NOTE:\n%U\n%a\n	%i"
          :clock-in t
-         :clock-resume t)))
+         :clock-resume t)
+        
+        ("u" "urgent" entry (file "~/org/pomodoro-refile.org")
+         "* TODO %? :URGENT:INTERRUPTION:\n%U")
+
+        ("a" "activity" entry (file "~/org/pomodoro-refile.org")
+         "* TODO %? :ACTIVITY:INTERRUPTION:\n%U")
+))
 
 
 ;; ----------------------------------------------------------------------------

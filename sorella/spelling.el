@@ -5,7 +5,7 @@
 (setq flyspell-issue-welcome-flag nil)
 
 ;; Uses british english as the default dictionary
-(setq ispell-dictionary "british")
+(setq ispell-dictionary "en_GB")
 
 
 ;; ----------------------------------------------------------------------------
@@ -19,10 +19,10 @@
 ;; ----------------------------------------------------------------------------
 ;; Modes where spelling is really important
 ;; ----------------------------------------------------------------------------
-(flyspell-enable-for-modes 'log-edit-mode-hook     ;; Editing commit messages
-                           'markdown-mode-hook     ;; \
-                           'text-mode-hook         ;;  -    modes
-                           'rst-mode-hook)         ;; /
+;(flyspell-enable-for-modes 'log-edit-mode-hook     ;; Editing commit messages
+;                           'markdown-mode-hook     ;; \
+;                           'text-mode-hook         ;;  -    modes
+;                          'rst-mode-hook)         ;; /
 
 
 ;; ----------------------------------------------------------------------------

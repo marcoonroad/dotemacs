@@ -5,15 +5,16 @@
   "Notify of new tweets through libnotify
 
 Requires the notify-send binary to be installed."
-  (let ((n twittering-new-tweets-count))
-    (if (> n 3)
-        (todochiku-message (format "twmode — %s" twittering-new-tweets-spec)
-                           (format "You have %d new tweets" n)
-                           (todochiku-icon 'social))
-      (dolist (tweet twittering-new-tweets-statuses)
-        (todochiku-message (format "twmode — %s" (cdr (assoc 'user-screen-name tweet)))
-                           (cdr (assoc 'text tweet))
-                           (todochiku-icon 'social))))))
+  ;; (let ((n twittering-new-tweets-count)) 
+  ;;   (if (> n 1)
+  ;;       (todochiku-message (format "twmode — %s" twittering-new-tweets-spec)
+  ;;                          (format "You have %d new tweets" n)
+  ;;                          (todochiku-icon 'social))
+  ;;     (dolist (tweet twittering-new-tweets-statuses)
+  ;;       (todochiku-message (format "twmode — %s" (cdr (assoc 'user-screen-name tweet)))
+  ;;                          (cdr (assoc 'text tweet))
+  ;;                          (todochiku-icon 'social))))))
+)
         
 (add-hook 'twittering-new-tweets-hook 'twittering-notify-new-tweets)
 
