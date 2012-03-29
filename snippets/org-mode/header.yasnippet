@@ -8,10 +8,14 @@
 ${3:$(unless (string= "" text) "#+DESCRIPTION: ")}${3:What this file is about?}
 ${4:$(unless (string= "" text) "#+CATEGORY: ")}${4:None}
 #+LANGUAGE: en_GB
+#+STYLE: <link rel="stylesheet" href="${5:../}/media/css/theme.css">
 
 #+OPTIONS: H:3 num:t toc:t
 #+OPTIONS: ^:{} f:nil <:nil d:nil
 #+OPTIONS: tasks:todo todo:t
+
+#+HTML: <div class="subtitle">{{{description}}}</div>
+
 
 
 $0
