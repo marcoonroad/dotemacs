@@ -67,6 +67,8 @@
   (yas/load-directory yas/root-directory)
   (yas/global-mode t))
 
+;; Versioning
+(require 'ahg)
 
 ;; ------------------------------------------------------------------------
 ;; Buffers and navigation
