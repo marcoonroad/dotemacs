@@ -1,6 +1,7 @@
 ;;; org.el --- Configuration for Org-mode
 
 (require 'org)
+(require 'org-special-blocks nil 'no-error)
 
 ;; ------------------------------------------------------------------------
 ;; Interface / Usability
