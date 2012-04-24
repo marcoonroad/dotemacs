@@ -47,6 +47,7 @@
 (load "utils/htmlise")
 (load "utils/css")
 (load "utils/workspaces")
+(load "utils/shell")
 
 ;; Main configuration
 (load "sorella/emacs")
