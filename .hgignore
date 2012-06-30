@@ -56,3 +56,4 @@ vendor/emacs-color-theme-solarized
 sorella/private/
 *.orig
 vendor/swank-js
+vendor/nxhtml

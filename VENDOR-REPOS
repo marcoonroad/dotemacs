@@ -30,3 +30,4 @@ vendor/deft               = [git]git://jblevins.org/git/deft.git
 vendor/perspective-el = [git]git://github.com/nex3/perspective-el.git
 vendor/emacs-color-theme-solarized = [git]git://github.com/sellout/emacs-color-theme-solarized.git
 vendor/swank-js = [git]https://github.com/ivan4th/swank-js.git
+vendor/nxhtml = [git]https://github.com/emacsmirror/nxhtml.git

@@ -43,11 +43,7 @@
 ;;------------------------------------------------------------------------
 
 ;; Utilities
-(load "utils/text")
-(load "utils/htmlise")
-(load "utils/css")
-(load "utils/workspaces")
-(load "utils/shell")
+(load "utils/all")
 
 ;; Main configuration
 (load "sorella/emacs")
@@ -55,7 +51,7 @@
 ;; Programming / Modes
 (load "sorella/org")
 (load "sorella/twittering")
-(load "sorella/programming/javascript")
+(load "sorella/programming/all")
 
 ;; Keybindings
 (load "sorella/keybindings")
