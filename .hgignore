@@ -57,3 +57,4 @@ sorella/private/
 *.orig
 vendor/swank-js
 vendor/nxhtml
+vendor/livescript-mode
