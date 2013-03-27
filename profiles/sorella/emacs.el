@@ -176,3 +176,9 @@
   (require 'color-theme-candy-chain)
   (require 'color-theme-solarized)
   (color-theme-candy-chain))
+
+
+;; ------------------------------------------------------------------------
+;; Server
+;; ------------------------------------------------------------------------
+(server-start)
