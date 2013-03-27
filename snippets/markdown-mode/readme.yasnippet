@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: readme
-# expand-env: ((yas/wrap-around-region 'nil))
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
 # --
 ${1:LibraryName}
 ${1:$(make-string (string-width text) ?=)}
@@ -8,105 +8,85 @@ ${1:$(make-string (string-width text) ?=)}
 ${2:Description}
 $0
 
-${3:$(unless (string= "" text) "### Supported platforms")}
 
-${3:Supported platforms}
-
-
-### Downloading
-
-$1 is hosted (and developed) on [Github][]. You can
-[download the lastest snapshot][snapshot] or clone the entire
-repository:
-
-    $ git clone git://github.com/${4:killdream}/${5:${1:$(downcase text)}}.git
-
-[Github]: https://github.com/$4/$5
-[snapshot]: https://github.com/$4/$5/zipball/master
+### Example
 
 
-### The build system
+### Requirements and supported platforms
 
-#### Pre-requisites
-
-$1 uses [Jakefiles][Jake] for build tasks. If you want them, you'll need:
-
-* [UglifyJS][]     - the minifier tool;
-* [Jake][]         - the build tool;
-* [NodeJS][]       - for running the build tool;
-
-**Note:**
-> You'll need UglifyJS 1.0.2+, since the previous versions frowned upon
-> form feeds. 
+This library makes use of a safely shim-able subset of ECMAScript 5
+features. If you need to support older browsers, you'll have to include
+the [es5-shim][] library.
 
 
-#### Listing the available tasks
 
-To get a list of all available tasks:
+### Installation
 
-    $ jake --tasks
-    
-To filter the task list, for example, to get all tasks that contain \`foo\`:
+If you're using [Browserify][] — you really should! — to manage your
+dependencies, just grab it from [NPM][]:
 
-    $ jake --tasks foo
-    
-Or just the usual:    
-    $ jake --tasks | grep foo
+\`\`\`bash
+$ npm install -d ${3:package-name}
+\`\`\`
 
+Otherwise, [download the latest release][] and include both the
+Browserify prelude and the $1 library in your page:
 
-#### Building
+\`\`\`html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ur Awesome Stuff</title>
+  </head>
+  <body>
+    {{ Lots of stuff might go here }}
+    <script src="/path/to/browserify.js"></script>
+    <script src="/path/to/$3.js"></script>
+  </body>
+</html>
+\`\`\`
 
-To build both the distribution scripts and documentation:
-
-    $ jake build
-    
-Individual things are placed inside the \`build\` namespace. You can just
-\`jake --tasks build\` from the command line to get a list of them.
-
-[Jake]:     https://github.com/mde/jake
-[UglifyJS]: https://github.com/mishoo/UglifyJS
-[Node.js]:  https://nodejs.org
-
-
-${6:$(unless (string= "" text) "### Tests")}
-
-${6:Tests}
-
-
-### Documentation
-
-You can build the actual documentation using:
-
-    $ jake build:docs
-    
-Also, the source code should be pretty well documented using OrpheOS's
-\`calliope\` documentation conventions. If you see functionality that miss
-documentation on why it exists, the implications of using it, or that
-just aren't explained well, please file a bug report :3
+In any of the cases above, $1 will be a \`require\`-able module in your
+platform, so you can just use \`${4:require("$3")}\` to instantiate it.
 
 
-### Support
 
--  Use the [Github tracker][tracker] to report bugs and/or request
-   features.
-   
--  Fork, do your changes and send me a delicious pull request for added
-   awesomeness.
+### Building
 
--  You can also find me on [Twitter][] or just [email me][] directly.
-   
-[tracker]: https://github.com/$4/$5/issues
-[Twitter]: http://twitter.com/${7:notSorella}
-[email me]: mailto:${8:quildreen@gmail.com}
+If you want to build stuff from the source, you'll need
+[LiveScript][]. Once you've got that installed and \`Slake\` on your path,
+just run:
+
+\`\`\`bash
+$ git clone git:/github.com/${5:killdream}/$3.git    # Download the project
+$ cd $3                                              # Move to the project folder
+$ npm install -d                                     # Initialise the dependencies
+$ slake build:all                                    # Runs the build tasks
+\`\`\`
+
+
+### Tests
+
+For building the test files, you can use \`slake test\`. For building them
+continuously, use \`slake test:continuous\`.
+
 
 
 ### Licence
 
-$1 is licensed under the delicious and permissive [MIT][] licence. you
+$1 is licensed under the delicious and permissive [MIT][] licence. You
 can happily copy, share, modify, sell or whatever — refer to the actual
 licence text for \`less\` information:
 
-    $ less LICENCE.txt
-    
-[MIT]: https://github.com/$4/$5/raw/master/LICENCE.txt
+\`\`\`bash
+$ less LICENCE.txt
+\`\`\`
 
+[download the latest release]: https://github.com/downloads/$5/$3/$3-${6:version}.tar.gz
+
+[es5-shim]: https://github.com/kriskowal/es5-shim
+[Browserify]: https://github.com/substack/node-browserify
+[NPM]: http://npmjs.org/
+[LiveScript]: https://gkz.github.com/LiveScript
+[MIT]: https://raw.github.com/$5/$3/master/LICENCE.txt
