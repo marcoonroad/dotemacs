@@ -36,6 +36,7 @@
                "visual-basic"
                "vbs-repl"
                "color-theme"
+               "livescript-mode"
                "zencoding")
 
 ;; ------------------------------------------------------------------------
