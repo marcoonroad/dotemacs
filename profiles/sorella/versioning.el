@@ -7,3 +7,7 @@
   (require 'diff-hl)
   (global-diff-hl-mode))
 
+;; ------------------------------------------------------------------------
+;; ahg: Deals with Mercurial repositories betterer
+;; ------------------------------------------------------------------------
+(require 'ahg)
