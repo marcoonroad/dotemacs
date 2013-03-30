@@ -18,7 +18,6 @@
                  jade-mode
                  js2-mode
                  json-mode
-                 livescript-mode
                  lua-mode
                  markdown-mode
                  org
@@ -44,6 +43,7 @@
                "visual-basic"
                "vbs-repl"
                "color-theme"
+               "livescript-mode"
                "zencoding")
 
 ;; ------------------------------------------------------------------------
