@@ -9,6 +9,7 @@
                  dart-mode
                  deft
                  desktop
+                 diff-hl
                  gist
                  haskell-mode
                  htmlize
