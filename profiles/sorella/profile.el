@@ -11,6 +11,7 @@
                  desktop
                  diff-hl
                  electric-case
+                 fastnav
                  gist
                  haskell-mode
                  htmlize

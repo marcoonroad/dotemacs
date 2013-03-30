@@ -122,6 +122,11 @@
   (require 'anything-config))
 
 
+;; Fast navigation/editing in a buffer
+(when (package-installed-p 'fastnav)
+  (require 'fastnav))
+
+
 ;; ------------------------------------------------------------------------
 ;; Spelling
 ;; ------------------------------------------------------------------------
