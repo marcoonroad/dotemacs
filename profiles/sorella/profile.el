@@ -10,6 +10,7 @@
                  deft
                  desktop
                  diff-hl
+                 electric-case
                  gist
                  haskell-mode
                  htmlize
