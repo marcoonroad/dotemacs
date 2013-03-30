@@ -17,6 +17,7 @@
                  htmlize
                  jade-mode
                  js2-mode
+                 json-mode
                  lua-mode
                  markdown-mode
                  org
