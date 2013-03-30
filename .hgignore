@@ -21,6 +21,7 @@ abbrev_defs
 anything-c-adaptive-history
 url/
 projectile.cache
+var/pcache/gh
 
 ## Subrepositories
 vendor/anything
