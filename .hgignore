@@ -20,6 +20,7 @@ elpa
 abbrev_defs
 anything-c-adaptive-history
 url/
+projectile.cache
 
 ## Subrepositories
 vendor/anything

@@ -23,6 +23,7 @@
                  markdown-mode
                  org
                  perspective
+                 projectile
                  pymacs
                  rainbow-mode
                  slime
