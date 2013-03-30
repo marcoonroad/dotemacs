@@ -29,7 +29,7 @@
       scroll-conservatively 1000)
 
 ;; Makes the fringe smaller (default size in pixels is 8)
-(fringe-mode 4)
+(fringe-mode 6)
 
 ;; Allow answerying y/n for all questions
 (fset 'yes-or-no-p 'y-or-n-p)
