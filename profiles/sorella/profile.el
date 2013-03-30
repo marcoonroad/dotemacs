@@ -8,6 +8,7 @@
                  color-theme-solarized
                  dart-mode
                  deft
+                 desktop
                  gist
                  haskell-mode
                  htmlize
