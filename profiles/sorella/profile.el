@@ -56,6 +56,8 @@
 ;; Main configuration
 (load "sorella/emacs")
 (load "sorella/bookmarks")
+(load "sorella/versioning")
+(load "sorella/desktop")
 
 ;; Programming / Modes
 (load "sorella/org")

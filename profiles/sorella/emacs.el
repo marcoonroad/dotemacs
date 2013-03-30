@@ -171,6 +171,9 @@
   (require 'perspective)
   (persp-mode))
 
+(when (require 'desktop nil 'no-error)
+  (desktop-save-mode 1))
+
 
 ;; ------------------------------------------------------------------------
 ;; Projects
