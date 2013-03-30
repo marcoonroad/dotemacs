@@ -1,6 +1,7 @@
 (sa/use-packages ahg
                  anything
                  anything-config
+                 bookmark+
                  clojure-mode
                  clojurescript-mode
                  coffee-mode
@@ -48,6 +49,7 @@
 
 ;; Main configuration
 (load "sorella/emacs")
+(load "sorella/bookmarks")
 
 ;; Programming / Modes
 (load "sorella/org")

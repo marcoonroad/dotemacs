@@ -99,3 +99,10 @@
             (local-set-key "\C-cr" 'twittering-retweet)))
 
 (global-set-key "\C-ct" 'twittering-update-status-interactive)
+
+
+;; ------------------------------------------------------------------------
+;; mode: Bookmarks+
+;; ------------------------------------------------------------------------
+(global-set-key "\C-xm" 'bookmark-map) ;; C-x m is mail, but fuck that
+(global-set-key "\C-xmc" 'bmkp-set-map)
