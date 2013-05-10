@@ -22,6 +22,7 @@
                  org
                  perspective
                  projectile
+                 puppet-mode
                  pymacs
                  rainbow-mode
                  slime

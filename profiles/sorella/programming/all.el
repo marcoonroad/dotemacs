@@ -2,3 +2,4 @@
 (load "sorella/programming/coffeescript")
 (load "sorella/programming/livescript")
 (load "sorella/programming/markdown")
+(load "sorella/programming/puppet")
