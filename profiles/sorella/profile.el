@@ -60,6 +60,7 @@
 
 ;; Programming / Modes
 (load "sorella/org")
+(load "sorella/irc")
 (load "sorella/twittering")
 (load "sorella/programming/all")
 
