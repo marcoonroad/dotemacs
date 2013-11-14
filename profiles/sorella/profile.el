@@ -10,7 +10,6 @@
                  deft
                  desktop
                  diff-hl
-                 electric-case
                  fastnav
                  gist
                  haskell-mode
@@ -23,6 +22,7 @@
                  org
                  perspective
                  projectile
+                 puppet-mode
                  pymacs
                  rainbow-mode
                  slime
@@ -60,6 +60,7 @@
 
 ;; Programming / Modes
 (load "sorella/org")
+(load "sorella/irc")
 (load "sorella/twittering")
 (load "sorella/programming/all")
 
