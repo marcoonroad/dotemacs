@@ -3,6 +3,15 @@
 (setq erc-user-full-name "Quildreen Motta")
 (setq erc-email-userid "quildreen")
 
+;; Minimal distractions
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+(setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT"))
+(setq erc-current-nick-highlight-type 'nick)
+(setq erc-track-use-faces t)
+(setq erc-track-faces-priority-list
+      '(erc-current-nick-face erc-keyword-face))
+(setq erc-track-priority-faces-only 'all)
+
 ;; Logging
 (setq erc-log-insert-log-on-open nil)
 (setq erc-log-channels t)
@@ -18,7 +27,11 @@
 
 ;; Highlighting
 (require 'erc-match)
-(setq erc-keywords '("sorella" "kill" "killdream" "quil" "quildreen"))
+(setq erc-keywords '("\\bsorella\\b"
+                     "\\bkill\\b"
+                     "\\bkilldream\\b"
+                     "\\bquil\\b"
+                     "\\bquildreen\\b"))
 (erc-match-mode)
 
 ;; Auto-join and channels
@@ -52,3 +65,31 @@
   (erc :server "irc.rizon.net" :port 6667 :nick "sorella")
   (erc :server "irc.mozilla.org" :port 6667 :nick "sorella")
   (erc :server "irc.irchighway.net" :port 6667 :nick "sorella"))
+
+;; Nickserv
+(load "~/.ercpass")
+(require 'erc-services)
+(erc-services-mode 1)
+
+(setq erc-prompt-for-nickserv-password nil)
+(setq erc-nickserv-passwords
+  `((freenode   (("sorella" . ,sa/erc-freenode-password)))
+    (rizon      (("sorella" . ,sa/erc-rizon-password)))
+    (irchighway (("sorella" . ,sa/erc-irchighway-password)))))
+
+;; Notify-send
+(require 'notifications)
+
+(defun sa/erc-notify (match-type user message)
+  (unless (posix-string-match "\^\\*+" message)
+    (let ((name (car (split-string user "!"))))
+      (notifications-notify
+       :title     (concat "Erc - " name ":")
+       :body      message
+       :app-icon  "/usr/share/notify-osd/icons/elementary/scalable/status/notification-message-im.svg"
+       :urgency   'low))))
+
+(add-hook 'erc-text-matched-hook 'sa/erc-notify)
+
+
+
