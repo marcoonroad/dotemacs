@@ -61,10 +61,10 @@
 (defun sa/irc ()
   "Connect to IRC."
   (interactive)
-  (erc :server "irc.freenode.net" :port 6667 :nick "sorella")
-  (erc :server "irc.rizon.net" :port 6667 :nick "sorella")
-  (erc :server "irc.mozilla.org" :port 6667 :nick "sorella")
-  (erc :server "irc.irchighway.net" :port 6667 :nick "sorella"))
+  (erc :server "irc.freenode.net" :port 6667 :nick "Sorella")
+  (erc :server "irc.rizon.net" :port 6667 :nick "Sorella")
+  (erc :server "irc.mozilla.org" :port 6667 :nick "Sorella")
+  (erc :server "irc.irchighway.net" :port 6667 :nick "Sorella"))
 
 ;; Nickserv
 (load "~/.ercpass")
@@ -73,15 +73,15 @@
 
 (setq erc-prompt-for-nickserv-password nil)
 (setq erc-nickserv-passwords
-  `((freenode   (("sorella" . ,sa/erc-freenode-password)))
-    (rizon      (("sorella" . ,sa/erc-rizon-password)))
-    (irchighway (("sorella" . ,sa/erc-irchighway-password)))))
+  `((freenode   (("Sorella" . ,sa/erc-freenode-password)))
+    (rizon      (("Sorella" . ,sa/erc-rizon-password)))
+    (irchighway (("Sorella" . ,sa/erc-irchighway-password)))))
 
 ;; Notify-send
 (require 'notifications)
 
 (defun sa/erc-notify (match-type user message)
-  (unless (posix-string-match "\^\\*+" message)
+  (unless (posix-string-match "^\\*+" message)
     (let ((name (car (split-string user "!"))))
       (notifications-notify
        :title     (concat "Erc - " name ":")
@@ -92,4 +92,16 @@
 (add-hook 'erc-text-matched-hook 'sa/erc-notify)
 
 
+;; Cycle through buffers (from Emacs Wiki)
+(defvar sa/erc-channels-to-visit nil
+  "Channels that have not yet been visited by erc-next-channel-buffer")
 
+(defun sa/erc-next-channel-buffer ()
+  "Switch to the next unvisited channel. See erc-channels-to-visit"
+  (interactive)
+  (when (null sa/erc-channels-to-visit)
+    (setq sa/erc-channels-to-visit 
+          (remove (current-buffer) (erc-channel-list nil))))
+  (let ((target (pop sa/erc-channels-to-visit)))
+    (if target 
+        (switch-to-buffer target))))

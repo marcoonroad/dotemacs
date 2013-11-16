@@ -124,3 +124,9 @@
   (global-set-key "\M-M" 'fastnav-mark-to-char-backward)
   (global-set-key "\M-p" 'fastnav-sprint-forward)
   (global-set-key "\M-P" 'fastnav-sprint-backward))
+
+
+;; ---------------------------------------------------------------------
+;; ERC
+;; ---------------------------------------------------------------------
+(global-set-key (kbd "<f8>") 'sa/erc-next-channel-buffer)
