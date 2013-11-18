@@ -4,6 +4,7 @@
 (setq erc-email-userid "quildreen")
 
 ;; Minimal distractions
+(setq sa/erc-minor-channels '("#GOW" "#NaNoBrazil" "#inimino"))
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT"))
 (setq erc-current-nick-highlight-type 'nick)
@@ -11,12 +12,20 @@
 (setq erc-track-faces-priority-list
       '(erc-current-nick-face erc-keyword-face))
 (setq erc-track-priority-faces-only 'all)
+(add-hook 'erc-join-hook 'sa/set-hide-list)
+
+(defun sa/set-hide-list ()
+  (when (member (buffer-name) sa/erc-minor-channels)
+    (make-variable-buffer-local 'erc-hide-list)
+    (setq erc-hide-list '())))
 
 ;; Logging
 (setq erc-log-insert-log-on-open nil)
 (setq erc-log-channels t)
 (setq erc-log-channels-directory "~/.irclogs/")
 (setq erc-save-buffer-on-part t)
+(setq erc-log-write-after-send t)
+(setq erc-log-write-after-insert t)
 (setq erc-hide-timestamps nil)
 
 ;; Truncating
@@ -27,8 +36,7 @@
 
 ;; Highlighting
 (require 'erc-match)
-(setq erc-keywords '("\\bsorella\\b"
-                     "\\bkill\\b"
+(setq erc-keywords '("\\bkill\\b"
                      "\\bkilldream\\b"
                      "\\bquil\\b"
                      "\\bquildreen\\b"))
@@ -55,7 +63,8 @@
          "#rust"
          "#js")
         ("rizon.net"
-         "#gow")))
+         "#GOW")))
+
 
 ;; Connecting
 (defun sa/irc ()
