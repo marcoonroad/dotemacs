@@ -16,7 +16,6 @@
 
 (defun sa/set-hide-list ()
   (when (member (buffer-name) sa/erc-minor-channels)
-    (make-variable-buffer-local 'erc-hide-list)
     (setq erc-hide-list '())))
 
 ;; Logging
