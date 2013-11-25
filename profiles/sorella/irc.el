@@ -4,7 +4,7 @@
 (setq erc-email-userid "quildreen")
 
 ;; Minimal distractions
-(setq sa/erc-minor-channels '("#GOW" "#NaNoBrazil" "#inimino"))
+(setq sa/erc-minor-channels '("#gow" "#NaNoBrazil" "#inimino"))
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT"))
 (setq erc-current-nick-highlight-type 'nick)
@@ -47,6 +47,7 @@
 (setq erc-autojoin-channels-alist
       '(("freenode.net"
          "#emacs"
+         "#esoteric"
          "##javascript"
          "#livescript"
          "#functionaljavascript"
