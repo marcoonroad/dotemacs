@@ -61,7 +61,8 @@
          "#Node.js"
          "#elementary"
          "##leveldb"
-         "#python-br")
+         "#python-br"
+         "#bbg")
         ("irchighway.net"
          "#NaNoBrazil")
         ("mozilla.org"
