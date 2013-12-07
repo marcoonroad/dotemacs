@@ -36,10 +36,11 @@
 
 ;; Highlighting
 (require 'erc-match)
-(setq erc-keywords '("\\bkill\\b"
-                     "\\bkilldream\\b"
+(setq erc-keywords '("\\bkilldream\\b"
                      "\\bquil\\b"
-                     "\\bquildreen\\b"))
+                     "\\bquildreen\\b"
+                     "\\blolita\\b"
+                     "\\brobotlolita\\b"))
 (erc-match-mode)
 
 ;; Auto-join and channels
