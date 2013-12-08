@@ -20,6 +20,7 @@
                  lua-mode
                  markdown-mode
                  org
+                 paredit
                  perspective
                  projectile
                  puppet-mode
