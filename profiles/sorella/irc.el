@@ -54,6 +54,7 @@
          "#livescript"
          "#functionaljavascript"
          "#inimino"
+         "#idris"
          "#haskell"
          "#clojure"
          "#scala"
