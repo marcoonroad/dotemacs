@@ -17,7 +17,7 @@
 ;; built-in `js-mode' for that.
 
 (require 'js3-mode)
-
+(require 'js2-mode)
 
 ;; JS3-mode is used for all *real* javascript dev
 (setq js3-mirror-mode                      nil  ;; No automatic paren insertion.
@@ -26,6 +26,15 @@
       js3-allow-keywords-as-property-names nil  ;; Not supported before ES5.
       js3-highlight-external-variables     t    ;; Catch some variable leaks.
       js3-indent-level                     2)
+
+;; JS2-mode is used for some stuff
+(setq js2-mirror-mode                      nil  ;; No automatic paren insertion.
+      js2-strict-missing-semi-warning      nil  ;; Yes ASI~.
+      js2-skip-preprocessor-directives     t    ;; No CPP.
+      js2-allow-keywords-as-property-names nil  ;; Not supported before ES5.
+      js2-highlight-external-variables     t    ;; Catch some variable leaks.
+      js2-indent-level                     2)
+
 
 ;; JS-mode is a fallback for JSON -.-
 (setq js-indent-level     2
