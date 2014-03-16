@@ -6,6 +6,8 @@ auto-save-list
 session*
 ignore
 pkg
+*.lock
+*.desktop
 *.elc
 *.gpg
 .git*
