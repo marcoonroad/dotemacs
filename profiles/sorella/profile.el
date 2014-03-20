@@ -30,6 +30,7 @@
                  slime-js
                  slime-repl
                  smex
+                 tss
                  twittering-mode
                  yaml-mode
                  yasnippet)

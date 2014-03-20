@@ -5,7 +5,6 @@
 
 ;; Minimal distractions
 (setq sa/erc-minor-channels '("#gow" "#NaNoBrazil" "#inimino"))
-(setq erc-hide-list '("JOIN" "PART" "QUIT"))
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT"))
 (setq erc-current-nick-highlight-type 'nick)
 (setq erc-track-use-faces t)
@@ -13,11 +12,12 @@
       '(erc-current-nick-face erc-keyword-face))
 (setq erc-track-priority-faces-only 'all)
 (add-hook 'erc-join-hook 'sa/set-hide-list)
+(setq erc-hide-list '())
 
 (defun sa/set-hide-list ()
-  (when (member (buffer-name) sa/erc-minor-channels)
+  (unless (member (buffer-name) sa/erc-minor-channels)
     (make-variable-buffer-local 'erc-hide-list)
-    (setq erc-hide-list '())))
+    (setq erc-hide-list '("JOIN" "PART" "QUIT"))))
 
 ;; Logging
 (setq erc-log-insert-log-on-open nil)
@@ -40,7 +40,9 @@
                      "\\bquil\\b"
                      "\\bquildreen\\b"
                      "\\blolita\\b"
-                     "\\brobotlolita\\b"))
+                     "\\brobotlolita\\b"
+                     "\\bsorella\\b"
+                     "\\bSorella\\b"))
 (erc-match-mode)
 
 ;; Auto-join and channels
@@ -56,6 +58,7 @@
          "#inimino"
          "#idris"
          "#haskell"
+         "#higgsjs"
          "#clojure"
          "#scala"
          "#scalaz"

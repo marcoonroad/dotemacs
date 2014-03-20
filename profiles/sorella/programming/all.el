@@ -5,3 +5,5 @@
 (load "sorella/programming/c-like")
 (load "sorella/programming/puppet")
 (load "sorella/programming/paredit")
+(load "sorella/programming/haskell")
+(load "sorella/programming/typescript")
