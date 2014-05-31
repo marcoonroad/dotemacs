@@ -102,7 +102,9 @@
 ;; Auto-modes
 ;; ------------------------------------------------------------------------
 (add-to-list 'auto-mode-alist '("\\.js$"   . js3-mode))
+(add-to-list 'auto-mode-alist '("\\.sjs$"  . js-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
+
 
 
 ;; ------------------------------------------------------------------------
