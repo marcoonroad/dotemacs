@@ -24,6 +24,9 @@ anything-c-adaptive-history
 url/
 projectile.cache
 var/pcache/gh
+ac-comphist.dat
+projectile-bookmarks.eld
+tramp
 
 ## Subrepositories
 vendor/anything
