@@ -65,3 +65,4 @@ sorella/private/
 vendor/swank-js
 vendor/nxhtml
 vendor/livescript-mode
+vendor/phemme-mode
