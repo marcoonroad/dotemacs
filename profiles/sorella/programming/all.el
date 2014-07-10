@@ -7,3 +7,4 @@
 (load "sorella/programming/paredit")
 (load "sorella/programming/haskell")
 (load "sorella/programming/typescript")
+(load "sorella/programming/phemme")
