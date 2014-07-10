@@ -46,7 +46,7 @@
                "vbs-repl"
                "color-theme"
                "livescript-mode"
-               "phemme-mode"
+               "purr-mode"
                "zencoding")
 
 ;; ------------------------------------------------------------------------

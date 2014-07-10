@@ -32,4 +32,4 @@ vendor/emacs-color-theme-solarized = [git]git://github.com/sellout/emacs-color-t
 vendor/swank-js = [git]https://github.com/ivan4th/swank-js.git
 vendor/nxhtml = [git]https://github.com/emacsmirror/nxhtml.git
 vendor/livescript-mode = [git]git://github.com/yhisamatsu/livescript-mode.git
-vendor/phemme-mode = [git]git://github.com/robotlolita/phemme-mode.git
+vendor/purr-mode = [git]git://github.com/robotlolita/purr-mode.git
