@@ -27,10 +27,9 @@ Requirements
 Building
 --------
 
-Simply change to the root dir, and run the build script (and I mean the
-script, not the make tool...):
+Simply change to the root dir, and run:
 
-    emacs -batch -l compile-all.el -f builder-make-all
+    $ make all
     
 This will pull everything you need from the interwebz (if you haven't
 yet), byte compile the stuff and build some packages.
