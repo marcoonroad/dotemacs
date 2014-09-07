@@ -4,8 +4,8 @@
 ;; Interface
 ;; ------------------------------------------------------------------------
 
-;; Enables the menu, but disables  the useless scrollbar and toolbar.
-(menu-bar-mode         1)
+;; Disables the menu, and the useless scrollbar and toolbar.
+(menu-bar-mode        -1)
 (scroll-bar-mode      -1)
 (tool-bar-mode        -1)
 
