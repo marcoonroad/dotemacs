@@ -194,7 +194,7 @@
 (when (require 'color-theme nil 'no-error)
   (require 'color-theme-candy-chain)
   (require 'color-theme-solarized)
-  (color-theme-candy-chain))
+  (color-theme-solarized-light))
 
 
 ;; ------------------------------------------------------------------------
