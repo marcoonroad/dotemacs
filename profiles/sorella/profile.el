@@ -2,6 +2,7 @@
                  anything
                  anything-config
                  bookmark+
+                 circe
                  clojure-mode
                  clojurescript-mode
                  coffee-mode
