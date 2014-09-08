@@ -20,6 +20,7 @@
                  json-mode
                  lua-mode
                  markdown-mode
+                 magit
                  org
                  paredit
                  perspective
