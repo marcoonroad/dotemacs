@@ -45,6 +45,7 @@
 ;; Editing
 ;; ------------------------------------------------------------------------
 (prefer-coding-system 'utf-8)
+(require 'iso-transl)
 
 ;; Tab and indentation settings
 (setq-default fill-column       79
