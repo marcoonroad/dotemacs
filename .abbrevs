@@ -46,4 +46,16 @@
     ("upsilon" "†õ" nil 0)
     ("zeta" "†æ" nil 0)
 
+    ;; kaomojis
+    ("kaowink" "‘¡î‘¡«‘£¨’¡µ‘¡£’¢ß‘£©" nil 0)
+    ("kaosmile" "(…ñœò¡¹œò¢Áœò¡¹…ñ)" nil 0)
+    ("kaohappy" "(*•¢º†ù•¢¹)" nil 0)
+    ("kaoheart" "(‘¤Å‰¡œò¢µ—«Ø—«Øœò¢µ‰¡)‘¤Å —¦¾" nil 0)
+    ("kaono" "(* œô¿ _œô¿ )" nil 0)
+    ("kaowhy" "(‘åø’¡¬Œ´’¡¬)‘åø" nil 0)
+    ("kaofliptable" "(•£Ã°‘¡õ°‘£©•£Ã•¡À ‘©ß‘©¥‘©ß" nil 0)
+    ("kaoshock" "‘¡Æ(’¡¬Œ´’¡¬;)" nil 0)
+    ("kaocry" "(™òá˜¡½™òá)" nil 0)
+    ("kaokissu" "(‘¤Å‘£ş ³‘£ş)‘¤Å" nil 0)
+    ("kaoshrug" "¯\\_(‘¥Ä)_/¯" nil 0)
 ))
