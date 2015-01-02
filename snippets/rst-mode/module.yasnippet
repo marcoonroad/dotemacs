@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# key: module
+# name: Module block
+# expand-env: ((yas/wrap-around-region 'nil) (yas-indent-line 'fixed))
+# --
+********${1:$(make-string (string-width yas-text) ?\*)}
+Module: ${1:name}
+********${1:$(make-string (string-width yas-text) ?\*)}
+
+.. module:: ${1}
+   :synopsis: $2
+   :platform: $3
+
+$0

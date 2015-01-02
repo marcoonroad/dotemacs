@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# key: method
+# name: Method block
+# expand-env: ((yas/wrap-around-region 'nil) (yas-indent-line 'fixed))
+# --
+.. method:: ${1:name}
+
+   :returns: ${2:Description of the return value}
+
+   .. code-block:: haskell
+
+      ${3:input -> output}
+
+   $4:description
+
+   **Example**::
+
+       $5
+
+$0

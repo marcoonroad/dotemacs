@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# key: ifunction
+# name: Function block
+# expand-env: ((yas/wrap-around-region 'nil) (yas-indent-line 'fixed))
+# --
+.. function:: ${1:name}
+   :noindex:
+
+   :returns: ${2:Description of the return value}
+
+   .. code-block:: haskell
+
+      ${3:input -> output}
+
+   $4:description
+
+   .. rst-class:: detail-link
+
+      :doc:`+ <$5>`
+
+
+$0

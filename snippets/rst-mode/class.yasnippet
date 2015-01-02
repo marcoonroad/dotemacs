@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# key: class
+# name: Class block
+# expand-env: ((yas/wrap-around-region 'nil) (yas-indent-line 'fixed))
+# --
+.. class:: ${1:Name}
+
+   .. code-block:: haskell
+
+      type ${1} = $2
+
+      implements
+        $3
+
+      methods
+        $4
+
+
+   ${5:Description}
+
+
+$0
