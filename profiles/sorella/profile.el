@@ -11,6 +11,7 @@
                  deft
                  desktop
                  diff-hl
+                 ebib
                  fastnav
                  gist
                  haskell-mode
@@ -34,6 +35,7 @@
                  smex
                  tss
                  twittering-mode
+                 typed-clojure-mode
                  yaml-mode
                  yasnippet)
 

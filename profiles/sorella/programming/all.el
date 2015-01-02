@@ -8,3 +8,4 @@
 (load "sorella/programming/haskell")
 (load "sorella/programming/typescript")
 (load "sorella/programming/purr")
+(load "sorella/programming/clojure")
