@@ -1,57 +1,57 @@
 # -*- mode: snippet -*-
 # name: Index page
 # key: index
-# expand-env: ((yas/wrap-around-region 'nil))
+# expand-env: ((yas/wrap-around-region 'nil) (yas-indent-line 'fixed))
 # --
 ${1:Library name} —at a glance—
 ${1:$(make-string (+ 14 (string-width text)) ?=)}
 
-${2:Quick Introduction}
+${2:Quick introduction}
 
 
-Installing
-''''''''''
+.. rst-class:: overview-list
 
-${3:Installation procedures}
+Guides
+------
 
+.. hlist::
+   :columns: 2
 
-Platform Support
-''''''''''''''''
-
-${4:Platforms supported by the project}
-
-
-Learning Boo
-''''''''''''
-
-.. toctree::
-   :maxdepth: ${5:Toc Depth}
-   
-   ${6:Toc Entries}
+   $3
 
 
-Support and Development
-'''''''''''''''''''''''
-
-${7:Support and development information}
-
-
-Licence
-'''''''
-
-$1 is licensed under the delicious and premissive `MIT`_ licence. You
-can happily copy, share, modify, sell or whatever — refer to the actual
-licence text for \`\`less\`\` information::
-
-    $ less LICENCE.txt
-
-.. _MIT: https://github.com/${8:username}/$1/raw/master/LICENCE.txt
-
+.. rst-class:: overview-list
 
 Indices and tables
-==================
+------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. hlist::
+   :columns: 2
 
+   * :ref:`Global Module Index <modindex>`
+         Quick access to all modules.
+
+   * :ref:`General Index <genindex>`
+         All functions, classes, terms, sections.
+
+   * :doc:`Glossary <glossary>`
+         Explains the most important terms.
+
+   * :ref:`Search page <search>`
+         Search this documentation.
+
+
+Other resources
+---------------
+
+.. toctree::
+
+   meta/issues
+   meta/contributing
+   meta/licence
+
+
+.. toctree::
+   :hidden:
+   
+   $4
