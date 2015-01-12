@@ -4,7 +4,7 @@
 # expand-env: ((yas/wrap-around-region 'nil) (yas-indent-line 'fixed))
 # --
 ${1:Library name} —at a glance—
-${1:$(make-string (+ 14 (string-width text)) ?=)}
+${1:$(make-string (+ 14 (string-width yas-text)) ?=)}
 
 ${2:Quick introduction}
 
@@ -28,16 +28,16 @@ Indices and tables
 .. hlist::
    :columns: 2
 
-   * :ref:`Global Module Index <modindex>`
+   * :ref:\`Global Module Index <modindex>\`
          Quick access to all modules.
 
-   * :ref:`General Index <genindex>`
+   * :ref:\`General Index <genindex>\`
          All functions, classes, terms, sections.
 
-   * :doc:`Glossary <glossary>`
+   * :doc:\`Glossary <glossary>\`
          Explains the most important terms.
 
-   * :ref:`Search page <search>`
+   * :ref:\`Search page <search>\`
          Search this documentation.
 
 
@@ -45,10 +45,6 @@ Other resources
 ---------------
 
 .. toctree::
-
-   meta/issues
-   meta/contributing
-   meta/licence
 
 
 .. toctree::
