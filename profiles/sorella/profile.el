@@ -25,17 +25,21 @@
                  org
                  paredit
                  perspective
+                 php-mode
                  projectile
                  puppet-mode
                  pymacs
                  rainbow-mode
+                 scala-mode
                  slime
                  slime-js
                  slime-repl
                  smex
                  tss
+                 tuareg
                  twittering-mode
                  typed-clojure-mode
+                 wakatime-mode
                  yaml-mode
                  yasnippet)
 
