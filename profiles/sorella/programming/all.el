@@ -9,3 +9,6 @@
 (load "sorella/programming/typescript")
 (load "sorella/programming/purr")
 (load "sorella/programming/clojure")
+
+;; Python
+(add-to-list 'auto-mode-alist '("\\.rpy$" . python-mode))
